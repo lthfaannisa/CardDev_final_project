@@ -1,6 +1,6 @@
-### CardDev-Sistem Biodata Alumni
+# CardDev-Sistem Biodata Alumni
 
-# Anggota
+## Anggota
 
 <li>Nabilah Qurratul Annisa(2108107010010)</li>
 <li>Nuzululrrahmah (2108107010012)</li>
