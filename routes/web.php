@@ -43,12 +43,12 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 // Route::get('/myprofile', [PagesController::class, 'myprofile'])->middleware('auth');
 // Route::get('/ongoing', [PagesController::class, 'ongoing'])->middleware('auth');
 // Route::get('/history', [PagesController::class, 'history'])->middleware('auth');
-    //Route::get('/dashboard', [PagesController::class, 'dashboard'])->middleware('auth');
-
-    //Route::get('/profile', [PagesController::class, 'profile'])->middleware('auth');
-    //Route::get('/bantuan', [PagesController::class, 'bantuan'])->middleware('auth');
-    //Route::get('/dataalumni', [PagesController::class, 'dataalumni'])->middleware('auth');
-    //Route::get('/logout', [LoginController::class, 'destroy'])->middleware('auth');
+   
+    Route::get('/dashboard', [PagesController::class, 'dashboard'])->middleware('auth');
+    Route::get('/profile', [PagesController::class, 'profile'])->middleware('auth');
+    Route::get('/bantuan', [PagesController::class, 'bantuan'])->middleware('auth');
+    Route::get('/dataalumni', [PagesController::class, 'dataalumni'])->middleware('auth');
+    Route::get('/logout', [LoginController::class, 'destroy'])->middleware('auth');
 
 
 
