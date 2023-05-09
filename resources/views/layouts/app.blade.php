@@ -12,7 +12,6 @@
 <body @yield('body')>
 
 
-    @include('partials.navbar2')
 
 
     <main class="min-h-screen">
