@@ -9,3 +9,6 @@
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <!-- Main Styling -->
 <link href="./assets/css/soft-ui-dashboard-tailwind.css?v=1.0.4" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="'https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" />
