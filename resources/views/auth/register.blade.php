@@ -21,9 +21,9 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none">
-                        <h3 class="pt-4 text-2xl text-center font-semibold">Sign-Up</h3>
-                        <form class="px-8 pt-6 pb-8 mb-4 bg-white rounded" method="POST" action="/register">
+                    <div class="w-full lg:w-1/2 p-5 rounded-lg lg:rounded-l-none shadow-blur bg-white/80 bg-clip-border backdrop-blur-2xl backdrop-saturate-200">
+                    <h3 class="pt-4 text-2xl text-center">Silahkan Mendaftar</h3>
+                        <form class="px-8 pt-6 pb-8 mb-4" method="POST" action="/register">
                             @csrf
                             <form class="space-y-6" action="#" method="POST">
                                 <div class="mb-4 relative">
