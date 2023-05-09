@@ -1,15 +1,5 @@
 @extends('layouts.app')
 
-
-@section('body')
-class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg')"
-@endsection
-
-@section('content')
-<!-- Register form that includes the name, npm, password  using tailwind css -->
-@extends('layouts.app')
-
-
 @section('body')
 class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg')"
 @endsection
