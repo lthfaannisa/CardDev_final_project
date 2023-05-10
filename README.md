@@ -13,25 +13,25 @@
 <hr>
 1. Clone or download this repository
 <pre><code>https://github.com/lthfaannisa/CardDev-SistemBiodataAlumni.git</code></pre>
-2. Rename .env.example file to .env
+2. Rename .env.example file to .env<br>
 3. Run composer install
 <pre><code>composer install</code></pre>
-3. Create a database in your local
+4. Create a database in your local
 <pre><code>create database SIMBA;</code></pre>
-4. Setting database in .env file
+5. Setting database in .env file
 <pre><code>DB_CONNECTION=mysql<br>
 DB_HOST=127.0.0.1<br>DB_PORT=3306<br>
 DB_DATABASE=SIMBA<br>
 DB_USERNAME=<your_username><br>
 DB_PASSWORD=<your_password></code></pre>
-5. Run npm install
+6. Run npm install
 <pre><code>npm install</code></pre>
-6. Run sudo npm run dev or npm run dev
+7. Run sudo npm run dev or npm run dev
 <pre><code>sudo npm run dev</code></pre>
 <pre><code>npm run dev</code></pre>
-7. Run php artisan migrate
+8. Run php artisan migrate
 <pre><code>npm install migrate</code></pre>
-8. Run php artisan serve
+9. Run php artisan serve
 <pre><code>php artisan serve</code></pre>
 
 <b>Now, you can access the project at localhost:8000 :D<b>
