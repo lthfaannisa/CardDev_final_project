@@ -121,7 +121,7 @@
                                         class="absolute top-0 hidden w-1/2 h-full lg:block" alt="waves" />
                                     <div class="relative flex items-center justify-center h-full">
                                         <img class="relative z-20 w-full pt-6"
-                                            src="./assets/img/illustrations/rocket-white.png" alt="rocket" />
+                                            src="image/logo-hd-usk.png" alt="usk" width="5"/>
                                     </div>
                                 </div>
                             </div>
