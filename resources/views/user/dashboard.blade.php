@@ -19,7 +19,7 @@
                             </div>
                             <div class="px-3 text-right basis-1/3">
                                 <div
-                                    class="inline-block w-12 h-12 text-center rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500">
+                                    class="inline-block w-12 h-12 text-center rounded-lg "style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                                     <i class="ni leading-none ni-money-coins text-lg relative top-3.5 text-white"></i>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="px-3 text-right basis-1/3">
                                 <div
-                                    class="inline-block w-12 h-12 text-center rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500">
+                                    class="inline-block w-12 h-12 text-center rounded-lg " style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                                     <i class="ni leading-none ni-world text-lg relative top-3.5 text-white"></i>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                             </div>
                             <div class="px-3 text-right basis-1/3">
                                 <div
-                                    class="inline-block w-12 h-12 text-center rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500">
+                                    class="inline-block w-12 h-12 text-center rounded-lg " style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                                     <i class="ni leading-none ni-paper-diploma text-lg relative top-3.5 text-white"></i>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="px-3 text-right basis-1/3">
                                 <div
-                                    class="inline-block w-12 h-12 text-center rounded-lg bg-gradient-to-tl from-purple-700 to-pink-500">
+                                    class="inline-block w-12 h-12 text-center rounded-lg " style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                                     <i class="ni leading-none ni-cart text-lg relative top-3.5 text-white"></i>
                                 </div>
                             </div>
@@ -116,12 +116,12 @@
                                 </div>
                             </div>
                             <div class="max-w-full px-3 mt-12 ml-auto text-center lg:mt-0 lg:w-5/12 lg:flex-none">
-                                <div class="h-full bg-gradient-to-tl from-purple-700 to-pink-500 rounded-xl">
+                                <div class="h-full  rounded-xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                                     <img src="./assets/img/shapes/waves-white.svg"
                                         class="absolute top-0 hidden w-1/2 h-full lg:block" alt="waves" />
                                     <div class="relative flex items-center justify-center h-full">
                                         <img class="relative z-20 w-full pt-6"
-                                            src="./assets/img/illustrations/rocket-white.png" alt="rocket" />
+                                            src="image/logo-hd-usk.png" alt="usk" width="5"/>
                                     </div>
                                 </div>
                             </div>
