@@ -30,7 +30,7 @@ DB_PASSWORD=<your_password></code></pre>
 <pre><code>sudo npm run dev</code></pre>
 <pre><code>npm run dev</code></pre>
 8. Run php artisan migrate
-<pre><code>npm install migrate</code></pre>
+<pre><code>php artisan migrate</code></pre>
 9. Run php artisan serve
 <pre><code>php artisan serve</code></pre>
 
