@@ -10,7 +10,7 @@ class PagesController extends Controller
     public function halamanUtama()
     {
         return view('auth.login', [
-            'title' => 'Rubbish Revive'
+            'title' => 'SIMBA'
         ]);
     }
 
@@ -34,23 +34,53 @@ class PagesController extends Controller
 
     public function profile()
     {
-        return view('user.profile', [
-            'title' => 'My Profile',
-        ]);
+        $role = Auth::user()->role;
+
+        if ($role == '1') {
+            return view('admin.profile', [
+                'title' => 'My Profile',
+            ]);
+        }
+
+        if ($role == '2') {
+            return view('user.profile', [
+                'title' => 'My Profile',
+            ]);
+        }
     }
 
     public function dataalumni()
     {
-        return view('user.dataalumni', [
-            'title' => 'Data Alumni',
-        ]);
+        $role = Auth::user()->role;
+
+        if ($role == '1') {
+            return view('admin.dataalumni', [
+                'title' => 'Data Alumni',
+            ]);
+        }
+
+        if ($role == '2') {
+            return view('user.dataalumni', [
+                'title' => 'Data Alumni',
+            ]);
+        }
     }
 
     public function bantuan()
     {
-        return view('user.bantuan', [
-            'title' => 'Bantuan',
-        ]);
+        $role = Auth::user()->role;
+
+        if ($role == '1') {
+            return view('admin.bantuan', [
+                'title' => 'Bantuan',
+            ]);
+        }
+
+        if ($role == '2') {
+            return view('user.bantuan', [
+                'title' => 'Bantuan',
+            ]);
+        }
     }
 
 
