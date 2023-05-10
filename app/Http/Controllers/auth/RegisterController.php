@@ -27,6 +27,15 @@ class registerController extends Controller
     {
 
     }
+    private function setRole($email)
+    {
+        if (strpos($email, 'mhs') !== false) {
+            $role = '2';
+        } else if (strpos($email, 'adm') !== false) {
+            $role = '1';
+        }
+        return $role;
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -34,6 +43,11 @@ class registerController extends Controller
     public function store(Request $request)
     {
         // store data registration to table user which is name,npm,password
+        if (strpos($request['email'], 'mhs') !== false) {
+            $role = '2';
+        } else if (strpos($request['email'], 'adm') !== false) {
+            $role = '1';
+        }
         $request->validate([
             'name' => 'required',
             'email' => 'required',
@@ -43,17 +57,11 @@ class registerController extends Controller
         # increment id
         $id = DB::table('users')->max('id');
 
-
-        # Jika NPM sudah ada yang punya maka kita harus mencegahnya agar tidak bisa register
-        if (DB::table('users')->where('email', $request->email)->exists()) {
-            Alert::error('Error', 'email udah ada yang punya oi');
-            return redirect('/register');
-        }
-
         // store data to table user
         DB::table('users')->insert([
             'id' => $id + 1,
             'name' => $request->name,
+            'role' => $this->setRole($request['email']),
             'email' => $request->email,
             'password' => Hash::make($request->password)
 
