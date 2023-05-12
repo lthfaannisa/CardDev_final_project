@@ -27,31 +27,38 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                             @csrf
                             <form class="space-y-6" action="#" method="POST">
                                 <div class="mb-4 relative">
-                                    <div>
-                                        <div class="pb-2 mt-1">
-                                            <label class="block mb-2 text-sm font-bold text-gray-700">NIP/NPM</label>
-                                            <input id="email" name="email" required class="relative block w-full px-8 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan username Anda">
-                                        </div>
+                                    <div class="pb-2 mt-1">
+                                        <label class="block mb-2 text-sm font-bold text-gray-700">
+                                            <i class="far fa-user absolute left-3 top-10"></i>
+                                            NIP/NPM</label>
+                                        <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan username Anda">
+                                    </div>
+                                </div>
 
-                                        <div class="mb-4 relative">
-                                            <div class="pb-4 mt-1">
-                                                <label class="block mb-2 text-sm font-bold text-gray-700">Password</label>
-                                                <input id="password" name="password" type="password" autocomplete="current-password" required class="relative block w-full px-8 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan password Anda">
-                                            </div>
+                                <div class="mb-4 relative">
+                                    <div class="pb-4 mt-1">
+                                        <label class="block mb-2 text-sm font-bold text-gray-700">
+                                            <i class="fas fa-lock absolute left-3 top-10"></i>
+                                            Password</label>
+                                        <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan password Anda">
+                                    </div>
 
-                                            <div class="mb-4 md:mt-3 text-center">
-                                                <button class="w-full px-4 py-2 font-bold text-white rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline" style="background-color: #A3A47F;" type="submit">
-                                                    Masuk
-                                                </button>
-                                            </div>
+                                    <div class="mb-4 md:mt-3 text-center">
+                                        <button class="w-full px-4 py-2 font-bold text-white rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline" style="background-color: #A3A47F;" type="submit">
+                                            Masuk
+                                        </button>
+                                    </div>
 
-                                            <div class="mb-1 text-center text-xs">
-                                                <p class="text-black">
-                                                    Belum memiliki akun?
-                                                    <a href="/register" style="color:#0077FF">Daftar sekarang</a>
+                                    <div class="mb-1 text-center text-xs">
+                                        <p class="text-black">
+                                            Belum memiliki akun?
+                                            <a href="/register" style="color:#0077FF">Daftar sekarang</a>
 
-                                                </p>
-                                            </div>
+                                        </p>
+                                    </div>
+                                </div>
+
+
                             </form>
                             @endsection
                     </div>
