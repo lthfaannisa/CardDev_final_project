@@ -52,6 +52,14 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 
 
 
+    // Route::get('/lowongan-u', function () {
+    //     return view('user.lowongan');
+    // });
+
+    // Route::get('/lowongan-a', function () {
+    //     return view('admin.lowongan');
+    // });
+
 
 
     // Route ini akan mengarahkan ke halaman logout
