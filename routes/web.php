@@ -60,6 +60,10 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
     //     return view('admin.lowongan');
     // });
 
+    // Route::get('/tambah-loker', function () {
+    //     return view('admin.tambahloker');
+    // });
+
 
 
     // Route ini akan mengarahkan ke halaman logout
