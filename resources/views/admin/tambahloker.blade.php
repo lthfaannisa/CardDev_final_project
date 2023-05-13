@@ -356,116 +356,113 @@
             </div>
              <!-- Isi Content Lowongan -->
 
-             <form action="" class="p-4">
-
-                </a>
+             <form action="" class="p-4 ">
 
                 <ul class="flex flex-col pl-0 mb-0 rounded-lg">
-
-
                     <li class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
-                        <strong class="text-slate-700">Nama Lengkap:</strong> &nbsp; 
+                        <strong class="text-slate-700">Nama Instansi</strong> &nbsp; 
                         
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                             <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-user" aria-hidden="true"></i>
+                                <i class="fas fa-building" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Lengkap" />
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Instansi" />
                         </div> 
 
                     </li>
 
+                    <li class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
+                        <div class="form-group">
+                            <label for="fotoInstansi"><strong class="text-slate-700">Foto Instansi</strong><br>
+                            <small>Max. 300kb; file png, jpg, svg</small>
+                        </label>
+                            <input type="file" class="form-control-file" id="fotoInstansi" accept=".png,.jpg, .svg" max-size="300" width="600">
+                          </div>
+                    </li>
+
                     <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                        <strong class="text-slate-700">NPM:</strong> &nbsp; 
+                        <strong class="text-slate-700">Posisi</strong> &nbsp; 
                         
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                             <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-id-card" aria-hidden="true"></i>
+                                <i class="fas fa-user-plus" aria-hidden="true"></i>
                             </span>
                             <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="NPM" />
                         </div> 
-
-
                     </li>
 
-                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                        <strong class="text-slate-700">Tempat & Tanggal Lahir:</strong> &nbsp; 
-
+                    
+                    <li class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
+                        <strong class="text-slate-700">Website Instansi</strong> &nbsp; 
+                        
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                             <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-user" aria-hidden="true"></i>
+                                <i class="fas fa-globe" aria-hidden="true"></i>
                             </span>
-                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tempat Lahir" />
-                        </div> 
-
-                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft mt-4">
-                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
-                            </span>
-                            <input type="date" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tanggal Lahir" />
-
-                        </div> 
-                    </li>
-
-
-                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                        <strong class="text-slate-700">Tahun Masuk</strong> &nbsp;
-                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
-                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
-                            </span>
-                            <input type="month" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tahun Masuk"/>
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Instansi" />
                         </div> 
 
                     </li>
 
                     <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                        <strong class="text-slate-700">Tahun Lulus:</strong> &nbsp;
+                        <strong class="text-slate-700">Email Instansi</strong> &nbsp; 
+
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                             <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
                             </span>
-                            <input type="month" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tahun Keluar" />
-                           
-                        </div> 
-
-                    </li>
-
+                            <input type="email" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tempat Lahir" />
+                        </div>    
+                   
                     <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                        <strong class="text-slate-700">Pekerjaan:</strong> &nbsp;
+                        <strong class="text-slate-700">Lokasi Instansi</strong> &nbsp;
 
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                             <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                                <i class="fas fa-map-pin" aria-hidden="true"></i>
                             </span>
                             <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Pekerjaan"  />
                         </div>
                     </li>
 
+                    
                     <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                         <strong class="text-slate-700">Bidang Minat:</strong> &nbsp;
 
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
-                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                <i class="fas fa-thumbtack" aria-hidden="true"></i>
-                            </span>
-                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Bidang Minat"  />
-                        </div>
-                    </li>
+                            <!-- Tes Awal -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input p-4" type="radio" name="flexRadioDefault" id="dataMining">
+                                <label class="custom-control-label p-2" for="dataMining">Data Mining & Kecerdasan Artfisial</label>
+                              </div>
+                              <div class="form-check ">
+                                <input class="form-check-input p-4" type="radio" name="flexRadioDefault" id="rpl">
+                                <label class="custom-control-label p-2" for="rpl">Rekayasa Perangkat Lunak</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input p-4" type="radio" name="flexRadioDefault" id="jaringan">
+                                <label class="custom-control-label p-2" for="jaringan">Jaringan Komputer dan Keamanan Siber</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input p-4" type="radio" name="flexRadioDefault" id="gis">
+                                <label class="custom-control-label p-2" for="gis">GeoSpasial</label>
+                              </div>
+                            <!-- End tes -->
 
                    
                     <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                        <strong class="text-slate-700">Judul Tugas Akhir:</strong> &nbsp;
+                        <strong class="text-slate-700">Persyaratan</strong> &nbsp;
 
                         <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft form-group">
                             <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
                             </span>
-                            <textarea class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow form-control" rows="3"></textarea>
+                            <textarea class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow form-control" rows="5"></textarea>
                         </div>
                     </li>
-
-
                 </ul>
+
+
+
 
 
                 <div class="flex items-center justify-center mb-3 mt-2">
