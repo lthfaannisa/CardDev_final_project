@@ -52,17 +52,22 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 
 
 
-    // Route::get('/lowongan-u', function () {
-    //     return view('user.lowongan');
-    // });
+    Route::get('/lowongan-u', function () {
+        return view('user.lowongan');
+    });
 
-    // Route::get('/lowongan-a', function () {
-    //     return view('admin.lowongan');
-    // });
+    Route::get('/lowongan-a', function () {
+        return view('admin.lowongan');
+    });
 
-    // Route::get('/tambah-loker', function () {
-    //     return view('admin.tambahloker');
-    // });
+    
+    Route::get('/edit-profile', function () {
+        return view('admin.editprofile');
+    });
+
+    Route::get('/tambah-loker', function () {
+        return view('admin.tambahloker');
+    });
 
 
 
