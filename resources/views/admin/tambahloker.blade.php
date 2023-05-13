@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
     <!-- Nucleo Icons -->
     <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
@@ -24,7 +25,7 @@
 
 </head>
 
-<body class="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500">
+<body class="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500 mb-5">
     <!-- sidenav  -->
     <aside class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent">
         <div class="h-19.5">
@@ -347,181 +348,155 @@
             </div>
         </nav>
 
+        <!-- Start Kotak Besar -->
+        <div class="flex-none w-full max-w-full px-3 mt-6">
+            <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border mb-2">
+              <div class="p-4 pb-4 mb-0 bg-white rounded-t-2xl">
+                <h6 class="mb-1">Lowongan</h6>
+            </div>
+             <!-- Isi Content Lowongan -->
 
-                <!-- Kotak Besar -->
+             <form action="" class="p-4">
 
-                <div class="flex-none w-full max-w-full px-3 mt-6">
-                    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-                      <div class="p-4 pb-0 mb-0 bg-white rounded-t-2xl">
-                        <h6 class="mb-1">Lowongan</h6>
-        
-                                        <!-- Isi Content Lowongan -->
+                </a>
 
-                                        <!-- Loker 1 -->
-                                    </div>
-                                    <div class="flex-auto p-4">
-                                      <div class="flex flex-wrap -mx-3">
-                                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
-                                          <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
-                                            <div class="relative">
-                                              <a class="block shadow-xl rounded-2xl">
-                                                <img src="image/foto-traveloka.svg" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
-                                              </a>
+                <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+
+
+                    <li class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
+                        <strong class="text-slate-700">Nama Lengkap:</strong> &nbsp; 
+                        
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Nama Lengkap" />
+                        </div> 
+
+                    </li>
+
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">NPM:</strong> &nbsp; 
+                        
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-id-card" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="NPM" />
+                        </div> 
+
+
+                    </li>
+
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">Tempat & Tanggal Lahir:</strong> &nbsp; 
+
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tempat Lahir" />
+                        </div> 
+
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft mt-4">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                            </span>
+                            <input type="date" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tanggal Lahir" />
+
+                        </div> 
+                    </li>
+
+
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">Tahun Masuk</strong> &nbsp;
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                            </span>
+                            <input type="month" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tahun Masuk"/>
+                        </div> 
+
+                    </li>
+
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">Tahun Lulus:</strong> &nbsp;
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                            </span>
+                            <input type="month" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Tahun Keluar" />
+                           
+                        </div> 
+
+                    </li>
+
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">Pekerjaan:</strong> &nbsp;
+
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Pekerjaan"  />
+                        </div>
+                    </li>
+
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">Bidang Minat:</strong> &nbsp;
+
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                <i class="fas fa-thumbtack" aria-hidden="true"></i>
+                            </span>
+                            <input type="text" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Bidang Minat"  />
+                        </div>
+                    </li>
+
+                   
+                    <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <strong class="text-slate-700">Judul Tugas Akhir:</strong> &nbsp;
+
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft form-group">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                            </span>
+                            <textarea class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow form-control" rows="3"></textarea>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+
+                <div class="flex items-center justify-center mb-3 mt-2">
+                    <button type="button" class="inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-xs hover:scale-102 active:shadow-soft-xs tracking-tight-soft border-fuchsia-500 text-fuchsia-500 hover:border-fuchsia-500 hover:bg-transparent hover:text-fuchsia-500 hover:opacity-75 hover:shadow-none active:bg-fuchsia-500 active:text-white active:hover:bg-transparent active:hover:text-fuchsia-500">Simpan Perubahan</button>
+                    <div class="mt-2"></div>
+                  </div>
+            </form>
+
+
+                                                <!-- End Content  -->
                                             </div>
-                                            <div class="flex-auto px-1 pt-6">
-                                              <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">Data Mining</p>
-                                              <a href="javascript:;">
-                                                <h5>Data Engineer</h5>
-                                              </a>
-                                              <p class="mb-6 leading-normal text-sm">Traveloka<br>Jakarta</p>
-                                              <div class="flex items-center justify-between">
-
-                                                <!-- Start Edit and Delete -->
-                                                <a class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700" href="javascript:;">
-                                                    <i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true">
-                                                        </i>Edit</a>
-                                                <a class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;">
-                                                    <i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text" aria-hidden="true">
-                                                        </i>Delete</a>
-                                                <!-- End Edit and Delete -->
-
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <!-- Loker 2 -->
-
-                                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
-                                          <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
-                                            <div class="relative">
-                                              <a class="block shadow-xl rounded-2xl">
-                                                <img src="image/foto-traveloka.svg" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-xl" width="600" />
-                                              </a>
-                                            </div>
-                                            <div class="flex-auto px-1 pt-6">
-                                              <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">RPL</p>
-                                              <a href="javascript:;">
-                                                <h5>Android Developer</h5>
-                                              </a>
-                                              <p class="mb-6 leading-normal text-sm">Traveloka<br>Jakarta</p>
-                                              <div class="flex items-center justify-between">
-
-                                                <!-- Start Edit and Delete -->
-                                                <a class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700" href="javascript:;">
-                                                    <i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true">
-                                                        </i>Edit</a>
-                                                <a class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;">
-                                                    <i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text" aria-hidden="true">
-                                                        </i>Delete</a>
-                                                <!-- End Edit and Delete -->
-
-                                                        
-                                                <div class="mt-2"></div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <!-- Loker 3 -->
-
-                                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
-                                          <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
-                                            <div class="relative">
-                                              <a class="block shadow-xl rounded-2xl">
-                                                <img src="image/foto-tokopedia.svg" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
-                                              </a>
-                                            </div>
-                                            <div class="flex-auto px-1 pt-6">
-                                              <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">Data Mining</p>
-                                              <a href="javascript:;">
-                                                <h5>Data Scientist</h5>
-                                              </a>
-                                              <p class="mb-6 leading-normal text-sm">Tokopedia<br>Jakarta</p>
-                                              <div class="flex items-center justify-between">
-
-                                                <!-- Start Edit and Delete -->
-                                                <a class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700" href="javascript:;">
-                                                    <i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true">
-                                                        </i>Edit</a>
-                                                <a class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;">
-                                                    <i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text" aria-hidden="true">
-                                                        </i>Delete</a>
-                                                <!-- End Edit and Delete -->
-
-                                                <div class="mt-2"></div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                        <!-- Loker 4-->
-                                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
-                                            <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
-                                              <div class="relative">
-                                                <a class="block shadow-xl rounded-2xl">
-                                                  <img src="image/foto-shopee.svg" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
-                                                </a>
-                                              </div>
-                                              <div class="flex-auto px-1 pt-6">
-                                                <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">RPL</p>
-                                                <a href="javascript:;">
-                                                  <h5>Back-End Engineer</h5>
-                                                </a>
-                                                <p class="mb-6 leading-normal text-sm">Shopee<br>Jakarta</p>
-                                                <div class="flex items-center justify-between">
-
-                                                   <!-- Start Edit and Delete -->
-                                                <a class="inline-block px-4 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 hover:scale-102 active:opacity-85 bg-x-25 text-slate-700" href="javascript:;">
-                                                    <i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true">
-                                                        </i>Edit</a>
-                                                <a class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text" href="javascript:;">
-                                                    <i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text" aria-hidden="true">
-                                                        </i>Delete</a>
-                                                <!-- End Edit and Delete -->
-                                                
-                                                  <div class="mt-2"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                         <!-- New Loker -->
-                                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12 mt-4">
-                                          <div class="relative flex flex-col h-full min-w-0 break-words bg-transparent border border-solid shadow-none rounded-2xl border-slate-100 bg-clip-border">
-                                            <div class="flex flex-col justify-center flex-auto p-6 text-center">
-                                              <a href="/tambah-loker">
-                                                <i class="mb-4 fa fa-plus text-slate-400"></i>
-                                                <h5 class="text-slate-400">Lowongan Baru</h5>
-                                              </a>
-                                            </div>
-                                          </div>
                                         </div>
                                       </div>
-                                    </div>
-
+                                      <!-- End Kotak Besar -->
         
-                                        <!-- End Content Lowongan -->
-                                    </div>
-                                </div>
-                              </div>
-
-                        <!--Footer-->
-                        <footer class="pt-4 fixed bottom-0 left-0 w-full bg-gray-100">
-                            <div class="w-full px-6 mx-auto">
-                                <div class="flex items-center justify-between -mx-3">
-                                    <div class="w-full max-w-full px-3 mt-0 mb-6 shrink-0 lg:mb-0 lg:w-1/2 lg:flex-none">
-                                        <div class="leading-normal text-center text-sm text-slate-500 lg:text-center whitespace-nowrap font-medium">
-                                            &copy; CardDev Team 2023
+                                <!--Footer-->
+                                <footer class="pt-4 fixed bottom-0 left-0 w-full bg-gray-100">
+                                    <div class="w-full px-6 mx-auto">
+                                        <div class="flex items-center justify-between -mx-3">
+                                            <div class="w-full max-w-full px-3 mt-0 mb-6 shrink-0 lg:mb-0 lg:w-1/2 lg:flex-none">
+                                                <div class="leading-normal text-center text-sm text-slate-500 lg:text-center whitespace-nowrap font-medium">
+                                                    &copy; CardDev Team 2023
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </footer>
-            
-                        <!--Footer End-->
-        </div>
-    </main>
-</body>
-
-</html>
+                                </footer>
+                    
+                                <!--Footer End-->
+                </div>
+            </main>
+        </body>
+        
+        </html>
