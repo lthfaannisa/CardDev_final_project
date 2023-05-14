@@ -14,6 +14,7 @@ class PagesController extends Controller
         ]);
     }
 
+
     public function dashboard()
     {
 
@@ -32,40 +33,6 @@ class PagesController extends Controller
         }
     }
 
-    public function profile()
-    {
-        $role = Auth::user()->role;
-
-        if ($role == '1') {
-            return view('admin.profile', [
-                'title' => 'My Profile',
-            ]);
-        }
-
-        if ($role == '2') {
-            return view('user.profile', [
-                'title' => 'My Profile',
-            ]);
-        }
-    }
-
-    public function dataalumni()
-    {
-        $role = Auth::user()->role;
-
-        if ($role == '1') {
-            return view('admin.dataalumni', [
-                'title' => 'Data Alumni',
-            ]);
-        }
-
-        if ($role == '2') {
-            return view('user.dataalumni', [
-                'title' => 'Data Alumni',
-            ]);
-        }
-    }
-
     public function bantuan()
     {
         $role = Auth::user()->role;
@@ -79,6 +46,22 @@ class PagesController extends Controller
         if ($role == '2') {
             return view('user.bantuan', [
                 'title' => 'Bantuan',
+            ]);
+        }
+    }
+    public function lowongan()
+    {
+        $role = Auth::user()->role;
+
+        if ($role == '1') {
+            return view('admin.lowongan', [
+                'title' => 'Lowongan',
+            ]);
+        }
+
+        if ($role == '2') {
+            return view('user.lowongan', [
+                'title' => 'Lowongan',
             ]);
         }
     }
