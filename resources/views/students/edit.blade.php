@@ -380,7 +380,7 @@
                 </div>
                 <!-- Isi Content Lowongan -->
 
-                <form action="{{ url('student/edit/', $student->id) }}" method="post" class="p-4">
+                <form action="{{ url('/updatealumni', $student->id) }}" method="post" class="p-4">
                     {!! csrf_field() !!}
                     </a>
 
