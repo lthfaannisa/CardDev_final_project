@@ -50,12 +50,11 @@ class StudentController extends Controller
         return view('students.edit', compact('student'));
     }
 
-    public function update(Request $request, string $id): RedirectResponse
+    public function update(Request $request, $id)
     {
-        $student = Student::find($id);
-        $input = $request->all();
-        $student->update($input);
-        return redirect('student')->with('flash_message', 'student Updated!');
+        $student = Student::findorfail($id);
+        $student->update($request->all());
+        return redirect('dataalumni')->with('flash_message', 'Student Addedd!');
     }
 
 
