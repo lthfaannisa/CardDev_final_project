@@ -31,7 +31,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                         <label class="block mb-2 text-sm font-bold text-gray-700">
                                             Nama</label>
                                         <div class="relative">
-                                            <input id="name" name="name" required class="relative block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan nama Anda" required>
+                                            <input id="name" name="name" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan nama Anda" required>
                                             <i class="far fa-user absolute  left-3 bottom-3 text-black "></i>
                                         </div>
                                     </div>
@@ -41,7 +41,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                                 Email
                                             </label>
                                             <div class="relative">
-                                                <input id="email" name="email" required class="relative block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan NPM Anda" required>
+                                                <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan NPM Anda" required>
                                                 <i class="absolute left-3 bottom-2.5 text-black fas fa-id-card"></i>
                                             </div>
                                         </div>
