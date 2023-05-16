@@ -122,5 +122,75 @@
         </div>
     </div>
 
+    <!--card row-3-->
+    <div class="w-full max-w-full -mx-3 px-3 mt-4 lg:w-full lg:flex-none">
+        <div class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+            <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
+                <h3 class="font-bold">Jumlah Alumni <h5 class="font-semibold">Berdasarkan Tahun</h5>
+                </h3>
+                <p class="leading-normal text-sm">
+                    <i class="fa fa-arrow-up text-lime-500"></i>
+                    <span class="font-semibold">4% more</span> in 2020
+                </p>
+            </div>
+            <div class="flex-auto p-4">
+                <div>
+                    <canvas id="chart-line" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const data = [32, 46, 53, 58, 62, 81, 79, 76];
+
+        // Mendapatkan referensi ke elemen canvas
+        const canvas = document.getElementById('chart-line');
+
+        // Membuat line chart
+        new Chart(canvas, {
+            type: 'line',
+            data: {
+                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'], // Label untuk setiap titik pada grafik
+                datasets: [{
+                    label: 'Total Alumni',
+                    data: data,
+                    borderColor: '#A3A47F', // Warna garis
+                    borderWidth: 2, // Ketebalan garis
+                    fill: true,
+                    backgroundColor: 'rgba(163, 164, 127, 0.4)', // Warna latar belakang area di bawah garis
+                    tension: 0.4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                tooltips: {
+                    enabled: true,
+                    mode: 'index',
+                    intersect: false,
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    titleFontColor: '#ffffff',
+                    bodyFontColor: '#ffffff',
+                    borderColor: '#ffffff',
+                    borderWidth: 1,
+                    displayColors: false,
+                    callbacks: {
+                        title: function(tooltipItem) {
+                            // Mengatur judul tooltip sebagai tahun
+                            return 'Tahun: ' + tooltipItem[0].label;
+                        },
+                        label: function(tooltipItem) {
+                            // Mengatur label tooltip sebagai data alumni
+                            return 'Jumlah Alumni: ' + tooltipItem.value;
+                        }
+                    }
+                },
+                // Konfigurasi lainnya
+            }
+        });
+    </script>
+
 
     @endsection
