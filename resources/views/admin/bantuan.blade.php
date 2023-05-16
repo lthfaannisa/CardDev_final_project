@@ -30,7 +30,7 @@
         <div class="h-19.5">
             <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden" sidenav-close></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700" href="javascript:;" target="_blank">
-                <img src="./assets/img/logo-ct.png" class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
+                <img src="https://simkuliah.usk.ac.id/assets/unsyiah.png" class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
                 <span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">SIMBA</span>
             </a>
         </div>
@@ -312,7 +312,7 @@
         </nav>
 
         <!-- table 1 -->
-        <div class="w-full px-6 py-6 mx-auto">
+        <div class="w-full px-8 py-8 mx-auto">
             <div class="flex flex-wrap -mx-3">
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
