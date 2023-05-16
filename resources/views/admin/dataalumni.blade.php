@@ -31,7 +31,7 @@
             <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
                 sidenav-close></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700" href="javascript:;" target="_blank">
-                <img src="./assets/img/logo-ct.png"
+                <img src="https://simkuliah.usk.ac.id/assets/unsyiah.png"
                     class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8"
                     alt="main_logo" />
                 <span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">SIMBA</span>
@@ -371,15 +371,11 @@
         </nav>
 
         <!-- table 1 -->
-        <div class="w-full px-6 py-6 mx-auto">
+        <div class="w-full px-8 py-8 mx-auto mt-6">
             <div class="flex flex-wrap -mx-3">
                 <div class="flex-none w-full max-w-full px-3">
                     <div
                         class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
-                        <!-- <div class="p-6 pb-0 mb-0 bg-white border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-                            <h6>Data Alumni</h6>
-                            <button class="pl-96">+ Add</button>
-                        </div> -->
                         <div
                             class="flex items-center justify-between p-6 pb-0 mb-0 bg-white border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
                             <h6 class="mr-auto">Data Alumni</h6>
@@ -473,7 +469,7 @@
                         <div class="w-full max-w-full px-3 mt-0 mb-6 shrink-0 lg:mb-0 lg:w-1/2 lg:flex-none">
                             <div
                                 class="leading-normal text-center text-sm text-slate-500 lg:text-center whitespace-nowrap font-medium">
-                                &copy; CardDev Team 2023
+                                Copyright &copy; CardDev Team 2023
                             </div>
                         </div>
                     </div>
