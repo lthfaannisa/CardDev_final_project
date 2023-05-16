@@ -211,9 +211,9 @@
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">Data Mining</p>
                                 </div>
-                                <h4 class="font-bold">158</h4>
+                                <h4 class="font-bold">145</h4>
                                 <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                    <div class="duration-600 ease-soft -mt-0.38 w-9/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="duration-600 ease-soft -mt-0.38 w-3/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
                                 </div>
                                 <h4 class="font-bold">158</h4>
                                 <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                    <div class="duration-600 ease-soft -mt-0.38 w-9/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="duration-600 ease-soft -mt-0.38 w-3/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -243,9 +243,9 @@
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">Jaringan</p>
                                 </div>
-                                <h4 class="font-bold">158</h4>
+                                <h4 class="font-bold">95</h4>
                                 <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                    <div class="duration-600 ease-soft -mt-0.38 w-9/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="duration-600 ease-soft -mt-0.38 w-2/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
@@ -259,9 +259,9 @@
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">GIS</p>
                                 </div>
-                                <h4 class="font-bold">158</h4>
+                                <h4 class="font-bold">89</h4>
                                 <div class="text-xs h-0.75 flex w-3/4 overflow-visible rounded-lg bg-gray-200">
-                                    <div class="duration-600 ease-soft -mt-0.38 w-9/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="duration-400 ease-soft -mt-0.38 w-1/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded-lg bg-slate-700 text-center text-white transition-all" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                     </div>
                                 </div>
                             </div>
