@@ -8,7 +8,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
 <!-- This is the login form -->
 <div class="flex flex-col min-h-screen">
     <div class="flex flex-1 bg-gray-100 bg-no-repeat bg-cover justify-center items-center" style="background-image: url('image/mipa.jpg')">
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-8xl">
             <div class="flex justify-center px-6 my-14">
                 <div class="w-full xl:w-3/4 lg:w-11/12 flex h-full">
                     <div class="w-full h-auto hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-color: #A3A47F;">
@@ -49,7 +49,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                         </button>
                                     </div>
 
-                                    <div class="mb-1 text-center text-xs">
+                                    <div class="mb-1 text-center text-sm">
                                         <p class="text-black">
                                             Belum memiliki akun?
                                             <a href="/register" style="color:#0077FF">Daftar sekarang</a>
