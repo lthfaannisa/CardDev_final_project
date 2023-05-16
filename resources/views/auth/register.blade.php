@@ -10,7 +10,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
     <div class="flex flex-1 bg-gray-100 bg-no-repeat bg-cover justify-center items-center" style="background-image: url('image/mipa.jpg')">
         <div class="container mx-auto h-full">
             <div class="flex justify-center px-6 my-16">
-                <div class="w-full xl:w-3/4 lg:w-11/12 flex h-full">
+                <div class="w-full xl:w-3/4 lg:w-11/12 flex h-full shadow-lg shadow-gray-900">
                     <div class="w-full h-auto hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-color: #A3A47F;">
                         <div class="flex items-center justify-center w-full h-full">
                             <div class="text-white font-bold text-2xl flex flex-col items-center justify-center ">
@@ -31,26 +31,20 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                         <label class="block mb-2 text-sm font-bold text-gray-700">
                                             Nama</label>
                                         <div class="relative">
-                                            <input id="name" name="name" required class="relative block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan nama Anda" required>
+                                            <input id="name" name="name" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan nama Anda" required>
                                             <i class="far fa-user absolute  left-3 bottom-3 text-black "></i>
                                         </div>
                                     </div>
-
                                     <div>
-
                                         <div class="pb-2 mt-1">
                                             <label class="block mb-2 text-sm font-bold text-gray-700">
-                                                NIP/NPM
+                                                Email
                                             </label>
                                             <div class="relative">
-                                                <input id="email" name="email" required class="relative block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan NPM Anda" required>
+                                                <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan NPM Anda" required>
                                                 <i class="absolute left-3 bottom-2.5 text-black fas fa-id-card"></i>
                                             </div>
                                         </div>
-
-
-
-
                                         <div class="pb-4 mt-1">
                                             <label class="block mb-2 text-sm font-bold text-gray-700">
                                                 Password
@@ -60,20 +54,15 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                                 <i class="absolute left-3 bottom-2.5 text-black fas fa-lock"></i>
                                             </div>
                                         </div>
-
-
-
                                         <div class="mb-4 md:mt-3 text-center">
                                             <button class="w-full px-4 py-2 font-bold text-white rounded-full focus:outline-none focus:shadow-outline" style="background-color: #A3A47F;" type="submit">
                                                 Daftar
                                             </button>
                                         </div>
-
                                         <div class="mb-1 text-center text-sm">
                                             <p class="text-black">
                                                 Sudah memiliki akun?
                                                 <a href="/login" style="color:#0077FF">Masuk</a>
-
                                             </p>
                                         </div>
                             </form>
