@@ -18,15 +18,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="https://simkuliah.usk.ac.id/assets/unsyiah.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title>SIMBA</title>
     @include('partials.link')
 </head>
 
 <body class="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500">
     @include('partials.navbar')
-    @include('partials.header')
+    @include('partials.header-admin')
 
 
     @yield('content')

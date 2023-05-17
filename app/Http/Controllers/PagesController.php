@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class PagesController extends Controller
@@ -9,37 +10,60 @@ class PagesController extends Controller
     public function halamanUtama()
     {
         return view('auth.login', [
-            'title' => 'Rubbish Revive'
+            'title' => 'SIMBA'
         ]);
     }
+
 
     public function dashboard()
     {
 
-        return view('user.dashboard', [
-            'title' => 'Dashboard',
-        ]);
-    }
+        $role = Auth::user()->role;
 
-    public function profile()
-    {
-        return view('user.profile', [
-            'title' => 'My Profile',
-        ]);
-    }
+        if ($role == '1') {
+            return view('admin.dashboard', [
+                'title' => 'Dashboard',
+            ]);
+        }
 
-    public function dataalumni()
-    {
-        return view('user.dataalumni', [
-            'title' => 'Data Alumni',
-        ]);
+        if ($role == '2') {
+            return view('user.dashboard', [
+                'title' => 'Dashboard',
+            ]);
+        }
     }
 
     public function bantuan()
     {
-        return view('user.bantuan', [
-            'title' => 'Bantuan',
-        ]);
+        $role = Auth::user()->role;
+
+        if ($role == '1') {
+            return view('admin.bantuan', [
+                'title' => 'Bantuan',
+            ]);
+        }
+
+        if ($role == '2') {
+            return view('user.bantuan', [
+                'title' => 'Bantuan',
+            ]);
+        }
+    }
+    public function lowongan()
+    {
+        $role = Auth::user()->role;
+
+        if ($role == '1') {
+            return view('admin.lowongan', [
+                'title' => 'Lowongan',
+            ]);
+        }
+
+        if ($role == '2') {
+            return view('user.lowongan', [
+                'title' => 'Lowongan',
+            ]);
+        }
     }
 
 

@@ -1,5 +1,6 @@
-@extends('layouts.main')
+@extends('layouts.main-admin')
 @section('content')
+
 <!-- cards -->
 <div class="w-full px-6 py-6 mx-auto">
     <!-- row 1 -->
@@ -97,6 +98,7 @@
         </div>
     </div>
 
+
     <!-- cards row 2 -->
     <div class="flex flex-wrap mt-6 -mx-3">
         <div class="w-full max-w-full h-60 px-3 lg:w-full lg:flex-none">
@@ -110,7 +112,7 @@
                         <h5 class="mb-6 px-5 font-semibold text-white">Sistem Infomasi Biodata Alumni Universitas Syiah Kuala
                             </p>
                         </h5>
-                        <p class="text-white justify-normal px-5">Hi, <span class="hidden sm:inline">{{ Auth::user()->name }}</span>
+                        <p class="text-white justify-normal px-5 font-semibold">Hi, Admin
                         </p>
                         <p class="text-white justify-normal px-5">This system is developed to track and find out the database of graduates from the Department of Informatics, Faculty of Mathematics and Natural Sciences, Universitas Syiah Kuala. We encourage you to use this system wisely.
                         </p>
@@ -191,7 +193,7 @@
     </script>
 
 
-    <!-- cards row 3 -->
+    <!-- cards row 4 -->
 
     <div class="flex flex-wrap mt-4 -mx-3 px-3">
         <div class="w-full mt-0 mb-1 lg:mb-0 lg:w-full lg:flex-none">
@@ -206,7 +208,7 @@
                                 <div class="flex mb-2">
                                     <div class="flex items-center justify-center w-10 h-10 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
 
-                                        <img src="image/gis.svg" alt="" width="18px" height="18px">
+                                        <img src="image/data-mining.svg" alt="" width="18px" height="18px">
 
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">Data Mining</p>
@@ -222,7 +224,7 @@
                                 <div class="flex mb-2">
                                     <div class="flex items-center justify-center w-10 h-10 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
 
-                                        <img src="image/gis.svg" alt="" width="18px" height="18px">
+                                        <img src="image/rpl.svg" alt="" width="18px" height="18px">
 
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">RPL</p>
@@ -238,7 +240,7 @@
                                 <div class="flex mb-2">
                                     <div class="flex items-center justify-center w-10 h-10 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
 
-                                        <img src="image/gis.svg" alt="" width="18px" height="18px">
+                                        <img src="image/jaringan.svg" alt="" width="18px" height="18px">
 
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">Jaringan</p>
@@ -301,7 +303,7 @@
 
     </div>
 
-    <!-- cards row 4 -->
+    <!-- cards row 5 -->
 
     <div class="flex flex-wrap my-6 -mx-3">
 
@@ -324,4 +326,7 @@
 
 </div>
 <!-- end cards -->
+
+
+
 @endsection
