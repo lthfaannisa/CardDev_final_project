@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main-admin')
 @section('content')
 <!-- cards -->
 <div class="w-full px-6 py-6 mx-auto">
@@ -105,17 +105,16 @@
                     <div class="flex flex-wrap -mx-3">
                         <div class="max-w-full px-3 lg:w-1/2 lg:flex-none">
                             <div class="flex flex-col h-full">
-                                <p class="pt-2 mb-1 font-semibold">TESASA</p>
-                                <h5 class="font-bold">Soft UI Dashboard</h5>
-                                <p class="mb-12">From colors, cards, typography to complex elements, you will find the
-                                    full documentation.</p>
+                                <p class="pt-2 mb-1 font-semibold">SIMBA</p>
+                                <h5 class="font-bold mb-6">Sistem Informasi Biodata Alumni</h5>
+                                <p class="mb-12">Sebuah sistem informasi yang berisikan Biodata alumni yang lulus di Universitas Syiah Kuala.</p>
                             </div>
                         </div>
                         <div class="max-w-full px-3 mt-12 ml-auto text-center lg:mt-0 lg:w-5/12 lg:flex-none">
                             <div class="h-full  rounded-xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                                 <img src="./assets/img/shapes/waves-white.svg" class="absolute top-0 hidden w-1/2 h-full lg:block" alt="waves" />
                                 <div class="relative flex items-center justify-center h-full">
-                                    <img class="relative z-20 w-full pt-6" src="image/logo-usk-hd" alt="usk" width="5" />
+                                    <img class="relative z-20 w-full pt-6" src="image/logo-hd-usk.png" alt="usk" width="5" />
                                 </div>
                             </div>
                         </div>
@@ -130,8 +129,9 @@
                     <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-80"></span>
                     <div class="relative z-10 flex flex-col flex-auto h-full p-4">
                         <h5 class="pt-2 mb-6 font-bold text-white">Melihat Track Alumni</h5>
-                        <p class="text-white">Sistem ini dibuat untuk mengetahui alumni mengambil bidang minat apa
-                            dan
+                        <p class="text-white">Sistem ini dibuat untuk mengetahui biodata alumni
+                            dan melihat lowongan kerja yang tersedia. Dan juga dpaat mengetahui bidang minat yang diambil dan judul skripsi apa 
+                            yang dibuat oleh alumni.
                         </p>
                     </div>
                 </div>
@@ -271,7 +271,7 @@
         <div class="w-full max-w-full px-3 mt-0 lg:w-7/12 lg:flex-none">
             <div class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
                 <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
-                    <h3>Jumlah Alumni <h5>Berdasarkan Tahun</h5>
+                    <h3>Jumlah Alumni <h5 class="font-bold">Berdasarkan Tahun</h5>
                     </h3>
                     <p class="leading-normal text-sm">
                         <i class="fa fa-arrow-up text-lime-500"></i>
@@ -294,6 +294,7 @@
 
     </div>
 
+    <div>
             <!--Footer-->
             <footer class="pt-4 fixed bottom-0 left-0 w-full bg-gray-100">
                 <div class="w-full px-6 mx-auto">
@@ -308,6 +309,8 @@
             </footer>
 
             <!--Footer End-->
+
+        </div>
 </div>
 <!-- end cards -->
 @endsection
