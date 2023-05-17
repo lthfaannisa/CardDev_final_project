@@ -393,22 +393,48 @@
                             <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                                 <!-- Tes Awal -->
                                 <div class="form-check mb-3">
+<<<<<<< Updated upstream
                                     <input class="form-check-input p-4" type="radio" name="bidang_minat" id="dataMining">
+=======
+                                    <input class="form-check-input p-4" type="radio" name="bidang_minat"
+                                        id="dataMining"
+                                        value="Data Mining & Kecerdasan
+                                        Artfisial">
+>>>>>>> Stashed changes
                                     <label class="custom-control-label p-2" for="dataMining">Data Mining & Kecerdasan
                                         Artfisial</label>
                                 </div>
                                 <div class="form-check ">
+<<<<<<< Updated upstream
                                     <input class="form-check-input p-4" type="radio" name="bidang_minat" id="rpl">
+=======
+                                    <input class="form-check-input p-4" type="radio" name="bidang_minat"
+                                        id="rpl"
+                                        value="Rekayasa Perangkat
+                                        Lunak">
+>>>>>>> Stashed changes
                                     <label class="custom-control-label p-2" for="rpl">Rekayasa Perangkat
                                         Lunak</label>
                                 </div>
                                 <div class="form-check">
+<<<<<<< Updated upstream
                                     <input class="form-check-input p-4" type="radio" name="bidang_minat" id="jaringan">
+=======
+                                    <input class="form-check-input p-4" type="radio" name="bidang_minat"
+                                        id="jaringan"
+                                        value="Jaringan Komputer dan
+                                        Keamanan Siber">
+>>>>>>> Stashed changes
                                     <label class="custom-control-label p-2" for="jaringan">Jaringan Komputer dan
                                         Keamanan Siber</label>
                                 </div>
                                 <div class="form-check">
+<<<<<<< Updated upstream
                                     <input class="form-check-input p-4" type="radio" name="bidang_minat" id="gis">
+=======
+                                    <input class="form-check-input p-4" type="radio" name="bidang_minat"
+                                        id="gis" value="GeoSpasial">
+>>>>>>> Stashed changes
                                     <label class="custom-control-label p-2" for="gis">GeoSpasial</label>
                                 </div>
                                 <!-- End tes -->

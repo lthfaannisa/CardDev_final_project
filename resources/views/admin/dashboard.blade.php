@@ -192,6 +192,7 @@
         });
     </script>
 
+    
 
     <!-- cards row 4 -->
 
@@ -329,4 +330,7 @@
 
 
 
-@endsection
+
+
+
+    @endsection

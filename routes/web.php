@@ -61,6 +61,8 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
     Route::get('/show/{id}', [StudentController::class, 'show'])->middleware('auth');
     Route::get('/edit/{id}', [StudentController::class, 'edit'])->middleware('auth');
     Route::get('/student/delete/{id}', [StudentController::class, 'destroy'])->middleware('auth');
+    Route::get('/search', [StudentController::class, 'search'])->middleware('auth');
+    Route::get('/lowongansearch', [LowonganController::class, 'search'])->middleware('auth');
     Route::get('/logout', [LoginController::class, 'destroy'])->middleware('auth');
 
 
