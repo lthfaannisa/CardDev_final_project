@@ -208,7 +208,7 @@
                                 <div class="flex mb-2">
                                     <div class="flex items-center justify-center w-10 h-10 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
 
-                                        <img src="image/gis.svg" alt="" width="18px" height="18px">
+                                        <img src="image/data-mining.svg" alt="" width="18px" height="18px">
 
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">Data Mining</p>
@@ -224,7 +224,7 @@
                                 <div class="flex mb-2">
                                     <div class="flex items-center justify-center w-10 h-10 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
 
-                                        <img src="image/gis.svg" alt="" width="18px" height="18px">
+                                        <img src="image/rpl.svg" alt="" width="18px" height="18px">
 
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">RPL</p>
@@ -240,7 +240,7 @@
                                 <div class="flex mb-2">
                                     <div class="flex items-center justify-center w-10 h-10 mr-2 text-center bg-center rounded fill-current shadow-soft-2xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
 
-                                        <img src="image/gis.svg" alt="" width="18px" height="18px">
+                                        <img src="image/jaringan.svg" alt="" width="18px" height="18px">
 
                                     </div>
                                     <p class="mt-1 mb-0 font-bold leading-tight text-sm">Jaringan</p>
