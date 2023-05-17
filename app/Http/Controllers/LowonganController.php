@@ -48,4 +48,15 @@ class LowonganController extends Controller
         $lowongan->update($request->all());
         return redirect('lowongan')->with('flash_message', 'lowongan Addedd!');
     }
+
+    public function search(Request $request)
+    {
+        if ($request->keyword) {
+            $lowongan = Lowongan::search($request->keyword)->get();
+        } else {
+            $lowongan = Lowongan::all();
+        }
+
+        return view('admin.lowongan', ['lowongan' => $lowongan]);
+    }
 }
