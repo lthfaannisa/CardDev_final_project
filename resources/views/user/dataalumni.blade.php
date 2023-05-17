@@ -191,7 +191,7 @@
                                     <tbody>
                                         @foreach ($students as $item)
                                         <tr>
-                                            <td class="w-96 pl-4"><img src="/image/{{ $item->foto }}"></td>
+                                            <td class="w-96 pl-4"><img width="76px" src="/image/{{ $item->foto }}"></td>
                                             <td class="px-6 py-3 pl-4 w-96">{{ $item->nama }}</td>
                                             <td class="px-6 py-3 pl-1 w-96">{{ $item->npm }}</td>
                                             <td class="px-6 py-3 pl-8 w-96">{{ $item->tahun_masuk }}</td>
