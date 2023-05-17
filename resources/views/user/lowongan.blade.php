@@ -175,7 +175,7 @@
                             <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
                                 <div class="relative">
                                     <a class="block shadow-xl rounded-2xl">
-                                        <img src={{ $item->foto_instansi }} alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
+                                        <img src="/image/{{ $item->foto_instansi }}" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
                                     </a>
                                 </div>
                                 <div class="flex-auto px-1 pt-6">
