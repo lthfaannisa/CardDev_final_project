@@ -140,18 +140,18 @@
             <!-- table 1 -->
 
             <div class="flex flex-wrap -mx-3">
-                <div class="flex-none w-full max-w-full px-3">
+                <div class="flex-none w-full max-w-full px-7">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
                         <div class="bg-white rounded-lg shadow-lg p-4">
 
-                            <div class="mb-4">
-                                <label class="block text-gray-700 font-bold mb-2" for="helpText">Tuliskan keluhan Anda
+                            <div class="mb-4 mx-3 my-2">
+                                <label class="block text-gray-700 font-bold mb-3" for="helpText">Tuliskan keluhan Anda
                                     dan bantu kami
                                     untuk terus berkembang!</label>
                                 <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="helpText" rows="6" placeholder="Tuliskan pertanyaan atau keluhan Anda"></textarea>
                             </div>
                             <div class="flex justify-end">
-                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-40">
+                                <button class="text-white font-bold py-2 px-4 rounded-full w-40" style="background-color: #A3A47F;" onmouseover="this.style.backgroundColor='#8C8D6F';" onmouseout="this.style.backgroundColor='#A3A47F';">
                                     Kirim
                                 </button>
                             </div>
