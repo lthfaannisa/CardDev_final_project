@@ -467,7 +467,7 @@
                                         <input name="tahun_masuk" type="number"
                                             class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-full min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
                                             min="1900" max="2099" step="1"
-                                            placeholder="Tahun Keluar" />
+                                            placeholder="Tahun Masuk" />
                                     </div>
                                 </li>
                             </div>
@@ -704,10 +704,13 @@
                 </div>
             </div>
         </div>
-</body>
-<!-- plugin for scrollbar  -->
+        <!-- plugin for scrollbar  -->
 <script src="../assets/js/plugins/perfect-scrollbar.min.js" async></script>
 <!-- github button -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- main script file  -->
 <script src="../assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
+
+</body>
+
+</html>
