@@ -172,8 +172,8 @@
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
 
-                        <div class="flex items-center md:ml-auto md:pr-4 mt-2">
-                            <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                        <div class="flex items-center md:ml-auto md:pr-4">
+                            <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft mt-2">
                                 <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
                                     <i class="fas fa-search" aria-hidden="true"></i>
                                 </span>
@@ -214,7 +214,7 @@
                                     <tbody>
                                         @foreach ($students as $item)
                                         <tr>
-                                            <td class="w-96 pl-4"><img src="/image/{{ $item->foto }}"></td>
+                                            <td class="w-96 pl-4"><img style="width: 70px;" src="/image/{{ $item->foto }}"></td>
                                             <td class="px-6 py-3 pl-4 w-96">{{ $item->nama }}</td>
                                             <td class="px-6 py-3 pl-1 w-96">{{ $item->npm }}</td>
                                             <td class="px-6 py-3 pl-8 w-96">{{ $item->tahun_masuk }}</td>
