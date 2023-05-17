@@ -186,7 +186,9 @@
                         <li class="leading-normal text-sm">
                             <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
                         </li>
-                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tables</li>
+                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Lowongan</li>
+                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Edit Lowongan</li>
+
                     </ol>
                     <h6 class="mb-0 font-bold capitalize">Lowongan</h6>
                 </nav>
@@ -457,6 +459,12 @@
         <!--Footer End-->
         </div>
     </main>
+         <!-- plugin for scrollbar  -->
+ <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
+ <!-- github button -->
+ <script async defer src="https://buttons.github.io/buttons.js"></script>
+ <!-- main script file  -->
+ <script src="./assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
 </body>
 
 </html>
