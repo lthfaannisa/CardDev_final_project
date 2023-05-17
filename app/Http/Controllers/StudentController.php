@@ -64,4 +64,15 @@ class StudentController extends Controller
         $student->delete();
         return back();
     }
+
+    public function search(Request $request)
+    {
+        if ($request->keyword) {
+            $student = Student::search($request->keyword)->get();
+        } else {
+            $student = Student::all();
+        }
+
+        return view('admin.dataalumni', ['students' => $student]);
+    }
 }
