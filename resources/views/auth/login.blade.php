@@ -8,9 +8,9 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
 <!-- This is the login form -->
 <div class="flex flex-col min-h-screen">
     <div class="flex flex-1 bg-gray-100 bg-no-repeat bg-cover justify-center items-center" style="background-image: url('image/mipa.jpg')">
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-8xl">
             <div class="flex justify-center px-6 my-14">
-                <div class="w-full xl:w-3/4 lg:w-11/12 flex h-full">
+                <div class="w-full xl:w-3/4 lg:w-11/12 flex h-full shadow-lg shadow-gray-900">
                     <div class="w-full h-auto hidden lg:block lg:w-1/2 bg-cover rounded-l-lg" style="background-color: #A3A47F;">
                         <div class="flex items-center justify-center w-full h-full">
                             <div class="text-white font-bold text-2xl flex flex-col items-center justify-center ">
@@ -30,11 +30,10 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                     <div class="pb-2 mt-1">
                                         <label class="block mb-2 text-sm font-bold text-gray-700">
                                             <i class="far fa-user absolute left-3 top-10"></i>
-                                            NIP/NPM</label>
+                                            Email</label>
                                         <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan username Anda">
                                     </div>
                                 </div>
-
                                 <div class="mb-4 relative">
                                     <div class="pb-4 mt-1">
                                         <label class="block mb-2 text-sm font-bold text-gray-700">
@@ -42,23 +41,18 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                             Password</label>
                                         <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan password Anda">
                                     </div>
-
                                     <div class="mb-4 md:mt-3 text-center">
                                         <button class="w-full px-4 py-2 font-bold text-white rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline" style="background-color: #A3A47F;" type="submit">
                                             Masuk
                                         </button>
                                     </div>
-
-                                    <div class="mb-1 text-center text-xs">
+                                    <div class="mb-1 text-center text-sm">
                                         <p class="text-black">
                                             Belum memiliki akun?
                                             <a href="/register" style="color:#0077FF">Daftar sekarang</a>
-
                                         </p>
                                     </div>
                                 </div>
-
-
                             </form>
                             @endsection
                     </div>
