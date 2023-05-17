@@ -30,7 +30,9 @@ class PagesController extends Controller
             $categories5 = Student::where('tahun_lulus', '2020')->count();
             $categories6 = Student::where('tahun_lulus', '2021')->count();
             $categories7 = Student::where('tahun_lulus', '2022')->count();
-            return view('admin.dashboard')->with('students', $students, )->with('categories1', $categories1)->with('categories2', $categories2)->with('categories3', $categories3)->with('categories4', $categories4)->with('categories5', $categories5)->with('categories6', $categories6)->with('categories7', $categories7);
+            return view('admin.dashboard', [
+                'title' => 'Dashboard',
+            ])->with('students', $students, )->with('categories1', $categories1)->with('categories2', $categories2)->with('categories3', $categories3)->with('categories4', $categories4)->with('categories5', $categories5)->with('categories6', $categories6)->with('categories7', $categories7);
         }
 
         if ($role == '2') {
@@ -38,7 +40,9 @@ class PagesController extends Controller
             $categories2 = Student::where('bidang_minat', 'Rekayasa Perangkat Lunak')->count();
             $categories3 = Student::where('bidang_minat', 'Jaringan Komputer & Keamanan Siber')->count();
             $categories4 = Student::where('bidang_minat', 'GeoSpasial')->count();
-            return view('user.dashboard')->with('students', $students, )->with('categories1', $categories1)->with('categories2', $categories2)->with('categories3', $categories3)->with('categories4', $categories4);
+            return view('user.dashboard', [
+                'title' => 'Dashboard',
+            ])->with('students', $students, )->with('categories1', $categories1)->with('categories2', $categories2)->with('categories3', $categories3)->with('categories4', $categories4);
         }
     }
 
