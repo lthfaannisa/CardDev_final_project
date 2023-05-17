@@ -334,17 +334,17 @@
 
                         </li>
 
-                        <li class="relative block px-4 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
+                        <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
                             <div class="form-group">
                                 <label for="fotoAlumni"><strong class="text-slate-700">Foto Alumni</strong><br></label>
                                 <div class="mb-2">
                                     <input name="foto" type="file" class="form-control-file form-control-file border border-gray-300 px-4 py-2 rounded-md" id="foto" accept=".png,.jpg,.svg" max-size="300" width="600">
                                 </div>
-                                <p class="text-sm">Max. 300kb; file png, jpg, svg</p>
+                                <p class="text-sm mb-0">Max. 300kb; file png, jpg, svg</p>
                             </div>
                         </li>
 
-                        <li class="relative block px-4 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                        <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                             <strong class="text-slate-700">NPM</strong> &nbsp;
 
                             <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
@@ -369,34 +369,33 @@
 
                         </li>
 
-                        <div class="flex flex-row">
-                            <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                                <strong class="text-slate-700">Tahun Masuk</strong> &nbsp;
-                                <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
-                                    <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                        <i class="fas fa-calendar-day" aria-hidden="true"></i>
-                                    </span>
-                                    <input name="tahun_masuk" type="number" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-full min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" min="1900" max="2099" step="1" placeholder="Tahun Masuk" />
-                                </div>
-                            </li>
-
-                            <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
-                                <strong class="text-slate-700">Tahun Lulus</strong> &nbsp;
-                                <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
-                                    <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
-                                        <i class="fas fa-calendar-day" aria-hidden="true"></i>
-                                    </span>
-                                    <input name="tahun_keluar" type="number" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-full min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" min="1900" max="2099" step="1" placeholder="Tahun Keluar" />
-                                </div>
-                            </li>
+                        <div class="flex">
+                            <div class="w-1/2 p-3 pl-0">
+                                <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                                    <strong class="text-slate-700">Tahun Masuk</strong> &nbsp;
+                                    <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                                        <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                            <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                                        </span>
+                                        <input name="tahun_keluar" type="number" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-full min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" min="1900" max="2099" step="1" placeholder="Tahun Keluar" />
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="w-1/2 p-0 pr-0">
+                                <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
+                                    <strong class="text-slate-700">Tahun Lulus</strong> &nbsp;
+                                    <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                                        <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                                            <i class="fas fa-calendar-day" aria-hidden="true"></i>
+                                        </span>
+                                        <input name="tahun_keluar" type="number" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-full min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" min="1900" max="2099" step="1" placeholder="Tahun Lulus" />
+                                    </div>
+                                </li>
+                            </div>
                         </div>
-
-
-
 
                         <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                             <strong class="text-slate-700">Pekerjaan</strong> &nbsp;
-
                             <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                                 <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
                                     <i class="fas fa-briefcase" aria-hidden="true"></i>
