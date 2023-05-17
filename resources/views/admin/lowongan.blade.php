@@ -32,7 +32,9 @@
             <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
                 sidenav-close></i>
             <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap text-slate-700" href="javascript:;" target="_blank">
-                <img src="https://simkuliah.usk.ac.id/assets/unsyiah.png" class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
+                <img src="https://simkuliah.usk.ac.id/assets/unsyiah.png"
+                    class="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8"
+                    alt="main_logo" />
                 <span class="ml-1 font-semibold text-sm transition-all duration-200 ease-nav-brand">SIMBA</span>
             </a>
         </div>
@@ -43,8 +45,10 @@
             <ul class="flex flex-col pl-0 mb-0">
                 <!-- Dashboard -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/dashboard">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+                        href="/dashboard">
+                        <div
+                            class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <img src="image/dashboard.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Dashboard</span>
@@ -85,8 +89,10 @@
 
                 <!-- Lowongan -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors rounded-lg bg-white font-semibold text-slate-700" href="/lowongan">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors rounded-lg bg-white font-semibold text-slate-700"
+                        href="/lowongan">
+                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5"
+                            style="background: linear-gradient(to right, #A3A47F, #8FA781)">
                             <img src="image/lowongan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Lowongan</span>
@@ -97,8 +103,10 @@
 
                 <!-- Bantuan -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/bantuan">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+                        href="/bantuan">
+                        <div
+                            class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <img src="image/bantuan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
@@ -108,8 +116,10 @@
 
                 <!--Logout-->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/logout">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+                        href="/logout">
+                        <div
+                            class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <img src="image/logout.svg" alt="" width="12px" height="12px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Log Out</span>
@@ -281,7 +291,7 @@
                                                 <i class="mr-2 fas fa-pencil-alt text-slate-700" aria-hidden="true">
                                                 </i>Edit</a>
                                             <a class="relative z-10 inline-block px-4 py-3 mb-0 font-bold text-center text-transparent uppercase align-middle transition-all border-0 rounded-lg shadow-none cursor-pointer leading-pro text-xs ease-soft-in bg-150 bg-gradient-to-tl from-red-600 to-rose-400 hover:scale-102 active:opacity-85 bg-x-25 bg-clip-text"
-                                                href="javascript:;">
+                                                href="{{ url('/lowongan/delete', $item->id) }}">
                                                 <i class="mr-2 far fa-trash-alt bg-150 bg-gradient-to-tl from-red-600 to-rose-400 bg-x-25 bg-clip-text"
                                                     aria-hidden="true">
                                                 </i>Delete</a>
