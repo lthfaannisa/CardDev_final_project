@@ -59,4 +59,10 @@ class LowonganController extends Controller
 
         return view('admin.lowongan', ['lowongan' => $lowongan]);
     }
+    public function destroy(string $id): RedirectResponse
+    {
+        $lowongan = Lowongan::findorfail($id);
+        $lowongan->delete();
+        return back();
+    }
 }

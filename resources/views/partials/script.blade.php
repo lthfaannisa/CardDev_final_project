@@ -1,5 +1,4 @@
  <!-- plugin for charts  -->
-
  <!-- plugin for scrollbar  -->
  <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
  <!-- github button -->
