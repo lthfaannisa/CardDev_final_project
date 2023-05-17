@@ -99,39 +99,20 @@
 
     <!-- cards row 2 -->
     <div class="flex flex-wrap mt-6 -mx-3">
-        <div class="w-full px-3 mb-6 lg:mb-0 lg:w-7/12 lg:flex-none">
-            <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
-                <div class="flex-auto p-4">
-                    <div class="flex flex-wrap -mx-3">
-                        <div class="max-w-full px-3 lg:w-1/2 lg:flex-none">
-                            <div class="flex flex-col h-full">
-                                <p class="pt-2 mb-1 font-semibold">TESASA</p>
-                                <h5 class="font-bold">Soft UI Dashboard</h5>
-                                <p class="mb-12">From colors, cards, typography to complex elements, you will find the
-                                    full documentation.</p>
-                            </div>
-                        </div>
-                        <div class="max-w-full px-3 mt-12 ml-auto text-center lg:mt-0 lg:w-5/12 lg:flex-none">
-                            <div class="h-full  rounded-xl" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
-                                <img src="./assets/img/shapes/waves-white.svg" class="absolute top-0 hidden w-1/2 h-full lg:block" alt="waves" />
-                                <div class="relative flex items-center justify-center h-full">
-                                    <img class="relative z-20 w-full pt-6" src="image/logo-hd-usk.png" alt="usk" width="5" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-full max-w-full px-3 lg:w-5/12 lg:flex-none">
+        <div class="w-full max-w-full h-60 px-3 lg:w-full lg:flex-none">
             <div class="border-black/12.5 shadow-soft-xl relative flex h-full min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border p-4">
-                <div class="relative h-full overflow-hidden bg-cover rounded-xl" style="background-image: url('./assets/img/ivancik.jpg')">
-                    <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-gray-900 to-slate-800 opacity-80"></span>
+                <div class="relative h-full overflow-hidden bg-cover rounded-xl" style="background-image: url('image/mipa.jpg')">
+                    <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-stone-500 to-slate-800 opacity-80"></span>
                     <div class="relative z-10 flex flex-col flex-auto h-full p-4">
-                        <h5 class="pt-2 mb-6 font-bold text-white">Melihat Track Alumni</h5>
-                        <p class="text-white">Sistem ini dibuat untuk mengetahui alumni mengambil bidang minat apa
-                            dan
+                        <h5 class="pt-2 mb-1 px-5 font-bold text-white">SIMBA
+                            </p>
+                        </h5>
+                        <h5 class="mb-6 px-5 font-semibold text-white">Sistem Infomasi Biodata Alumni Universitas Syiah Kuala
+                            </p>
+                        </h5>
+                        <p class="text-white justify-normal px-5">Hi, <span class="hidden sm:inline">{{ Auth::user()->name }}</span>
+                        </p>
+                        <p class="text-white justify-normal px-5">This system is developed to track and find out the database of graduates from the Department of Informatics, Faculty of Mathematics and Natural Sciences, Universitas Syiah Kuala.We encourage you to use this system wisely.
                         </p>
                     </div>
                 </div>
@@ -139,10 +120,83 @@
         </div>
     </div>
 
+    <!--jj-->
+    <div class="w-full max-w-full -mx-3 px-3 mt-4 lg:w-full lg:flex-none">
+        <div class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+            <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
+                <h3 class="font-semibold">Jumlah Alumni <h5>Berdasarkan Tahun</h5>
+                </h3>
+                <p class="leading-normal text-sm">
+                    <i class="fa fa-arrow-up text-lime-500"></i>
+                    <span class="font-semibold">4% more</span> in 2020
+                </p>
+            </div>
+            <div class="flex-auto p-4">
+                <div>
+                    <canvas id="chart-line" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Menulis kode JavaScript di sini
+        // Sumber data Anda
+        const data = [32, 46, 53, 58, 62, 81, 79, 76];
+
+        // Mendapatkan referensi ke elemen canvas
+        const canvas = document.getElementById('chart-line');
+
+        // Membuat line chart
+        new Chart(canvas, {
+            type: 'line',
+            data: {
+                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'], // Label untuk setiap titik pada grafik
+                datasets: [{
+                    label: 'Total Alumni',
+                    data: data, // Menggunakan sumber data Anda
+                    borderColor: '#A3A47F', // Warna garis
+                    borderWidth: 2, // Ketebalan garis
+                    fill: true, // Mengisi area di bawah garis
+                    backgroundColor: 'rgba(163, 164, 127, 0.4)', // Warna latar belakang area di bawah garis
+                    tension: 0.4, // Mengatur tingkat kelengkungan kurva
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                tooltips: {
+                    enabled: true, // Mengaktifkan tooltip
+                    mode: 'index', // Menampilkan tooltip pada setiap titik
+                    intersect: false,
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Warna latar belakang tooltip
+                    titleFontColor: '#ffffff', // Warna teks judul tooltip
+                    bodyFontColor: '#ffffff', // Warna teks isi tooltip
+                    borderColor: '#ffffff', // Warna border tooltip
+                    borderWidth: 1, // Ketebalan border tooltip
+                    displayColors: false, // Tidak menampilkan kotak warna pada tooltip
+                    callbacks: {
+                        title: function(tooltipItem) {
+                            // Mengatur judul tooltip sebagai tahun
+                            return 'Tahun: ' + tooltipItem[0].label;
+                        },
+                        label: function(tooltipItem) {
+                            // Mengatur label tooltip sebagai data alumni
+                            return 'Jumlah Alumni: ' + tooltipItem.value;
+                        }
+                    }
+                },
+                // Konfigurasi lainnya
+            }
+        });
+    </script>
+
+
     <!-- cards row 3 -->
 
     <div class="flex flex-wrap mt-6 -mx-3">
-        <div class="w-full max-w-full px-3 mt-0 mb-6 lg:mb-0 lg:w-5/12 lg:flex-none">
+        <div class="w-full max-w-full px-3 mt-0 mb-6 lg:mb-0 lg:w-full lg:flex-none">
             <div class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
                 <div class="flex-auto p-4">
                     <div class="py-4 pr-1 mb-4 bg-gradient-to-tl from-gray-900 to-slate-800 rounded-xl">
@@ -268,25 +322,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full max-w-full px-3 mt-0 lg:w-7/12 lg:flex-none">
-            <div class="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
-                <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
-                    <h3>Jumlah Alumni <h5>Berdasarkan Tahun</h5>
-                    </h3>
-                    <p class="leading-normal text-sm">
-                        <i class="fa fa-arrow-up text-lime-500"></i>
-                        <span class="font-semibold">4% more</span> in 2021
-                    </p>
-                </div>
-                <div class="flex-auto p-4">
-                    <div>
-                        <canvas id="chart-line" height="300"></canvas>
-                    </div>
-                </div>
-            </div>
 
-
-        </div>
     </div>
 
     <!-- cards row 4 -->
