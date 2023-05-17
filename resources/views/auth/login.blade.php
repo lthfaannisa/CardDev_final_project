@@ -31,7 +31,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                         <label class="block mb-2 text-sm font-bold text-gray-700">
                                             <i class="far fa-user absolute left-3 top-10"></i>
                                             Email</label>
-                                        <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan username Anda">
+                                        <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-400 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan email Anda">
                                     </div>
                                 </div>
                                 <div class="mb-4 relative">
