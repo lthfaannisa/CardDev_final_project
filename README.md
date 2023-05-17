@@ -9,7 +9,7 @@
 <li>Laila Asrin (2108107010068)</li>
 <li>Annisa Lathifa (2108107010088)</li>
 
-### About
+### About this project
 <hr>
 <p>Sistem Informasi Biodata Alumni adalah sebuah sistem yang dirancang untuk mengumpulkan, menyimpan, <br>
 dan mengelola data biodata para alumni. Tujuan utama dari sistem ini adalah memudahkan institusi dalam <br>
@@ -20,7 +20,7 @@ informasi terkait profil pribadi dari para alumni.</p>
  ### How to run this application in your local (laravel project)
  <hr>
 1. Clone or download this repository
-<pre><code>https://github.com/lthfaannisa/CardDev-SistemBiodataAlumni.git</code></pre>
+<pre><code>https://github.com/lthfaannisa/CardDev_final_project.git</code></pre>
 2. Rename .env.example file to .env<br>
 3. Run composer install
 <pre><code>composer install</code></pre>
