@@ -24,7 +24,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 
 </head>
-
 <body class="m-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500">
     <!-- sidenav  -->
     <aside class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent">
@@ -35,26 +34,28 @@
                 <span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">SIMBA</span>
             </a>
         </div>
-
+    
         <hr class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent" />
-
+    
         <div class="items-center block w-auto max-h-screen overflow-auto h-sidenav grow basis-full">
             <ul class="flex flex-col pl-0 mb-0">
                 <!-- Dashboard -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/dashboard">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" 
+                    href="/dashboard">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <img src="image/dashboard.svg" alt="" width="13px">
                         </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Dashboard</span>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
                     </a>
                 </li>
                 <!-- Dashboard end -->
-
+    
                 <!-- Data Alumni -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/dataalumni">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" 
+                    href="/dataalumni">
+                    <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>office</title>
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -75,29 +76,31 @@
                     </a>
                 </li>
                 <!-- Data alumni end -->
-
+    
                 <!-- Lowongan -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/lowongan">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" 
+                    href="/lowongan">
+                    <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <img src="image/lowongan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Lowongan</span>
                     </a>
                 </li>
                 <!-- Lowongan end -->
-
+    
                 <!-- Bantuan -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm shadow-soft-xl ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors" href="/bantuan">
-                        <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
-                            <img src="image/bantuan.svg" alt="" width="12px" height="12px">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors rounded-lg bg-white font-semibold text-slate-700" 
+                    href="/bantuan">
+                    <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
+                        <img src="image/bantuan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
                     </a>
                 </li>
                 <!-- Bantuan end -->
-
+    
                 <!--Logout-->
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/logout">
@@ -108,33 +111,60 @@
                     </a>
                 </li>
                 <!--end Logout-->
-
             </ul>
         </div>
     </aside>
     <!-- end sidenav -->
 
 
-    <!-- content -->
-    <main class="ease-soft-in-out xl:ml-68.5 relative h-full max-h-screen rounded-xl transition-all duration-200">
         <!-- Navbar -->
-        <nav class="relative flex flex-wrap items-center justify-between px-0 py-2 mx-6 transition-all shadow-none duration-250 ease-soft-in rounded-2xl lg:flex-nowrap lg:justify-start" navbar-main navbar-scroll="true">
-            <div class="flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit">
-                <nav>
-                    <!-- breadcrumb -->
-                    <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
-                        <li class="leading-normal text-sm">
-                            <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
-                        </li>
-                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tables</li>
-                    </ol>
-                    <h6 class="mb-0 font-bold capitalize">Bantuan</h6>
-                </nav>
-
-
-            </div>
-            </div>
+<main class="ease-soft-in-out xl:ml-68.5 relative h-full max-h-screen rounded-xl transition-all duration-200">
+    <!-- Navbar -->
+    <nav class="relative flex flex-wrap items-center justify-between px-0 py-2 mx-6 transition-all shadow-none duration-250 ease-soft-in rounded-2xl lg:flex-nowrap lg:justify-start" navbar-main navbar-scroll="true">
+      <div class="flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit">
+        <nav>
+          <!-- breadcrumb -->
+          <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
+            <li class="leading-normal text-sm">
+              <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
+            </li>
+            <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Bantuan</li>
+          </ol>
+          <h6 class="mb-0 font-bold capitalize">Bantuan</h6>
         </nav>
+
+        <div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
+          <div class="flex items-center md:ml-auto md:pr-4">
+          </div>
+          <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
+            <!-- online builder btn  -->
+            <!-- <li class="flex items-center">
+              <a class="inline-block px-8 py-2 mb-0 mr-4 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro border-fuchsia-500 ease-soft-in text-xs hover:scale-102 active:shadow-soft-xs text-fuchsia-500 hover:border-fuchsia-500 active:bg-fuchsia-500 active:hover:text-fuchsia-500 hover:text-fuchsia-500 tracking-tight-soft hover:bg-transparent hover:opacity-75 hover:shadow-none active:text-white active:hover:bg-transparent" target="_blank" href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard&amp;_ga=2.76518741.1192788655.1647724933-1242940210.1644448053">Online Builder</a>
+            </li> -->
+            <li class="flex items-center">
+              <a class="block px-0 py-2 font-semibold transition-all ease-nav-brand text-sm text-slate-500">
+                <i class="fa fa-user sm:mr-1"></i>
+                <span class="hidden sm:inline">{{ Auth::user()->name }}</span>
+              </a>
+            </li>
+            <li class="flex items-center pl-4 xl:hidden">
+              <a href="javascript:;" class="block p-0 transition-all ease-nav-brand text-sm text-slate-500" sidenav-trigger>
+                <div class="w-4.5 overflow-hidden">
+                  <i class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                  <i class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                  <i class="ease-soft relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                </div>
+              </a>
+            </li>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
         <div class="w-full px-6 py-6 mx-auto">
             <!-- table 1 -->
@@ -179,6 +209,12 @@
             <!--Footer End-->
         </div>
     </main>
+
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
+    <!-- github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- main script file  -->
+    <script src="./assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
 </body>
 
 </html>
