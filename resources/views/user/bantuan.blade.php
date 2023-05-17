@@ -10,7 +10,7 @@
     <!-- Favicon icon -->
     <link rel="icon" href="https://simkuliah.unsyiah.ac.id/assets/unsyiah.png" type="image/x-icon">
     <title>SIMBA - Profile</title>
-    <!--     Fonts and icons     -->
+    <!-- Fonts and icons -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
@@ -46,7 +46,7 @@
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
                             <img src="image/dashboard.svg" alt="" width="13px">
                         </div>
-                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Dashboard</span>
+                        <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
                     </a>
                 </li>
                 <!-- Dashboard end -->
@@ -89,9 +89,9 @@
 
                 <!-- Bantuan -->
                 <li class="mt-0.5 w-full">
-                    <a class="py-2.7 text-sm shadow-soft-xl ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap rounded-lg bg-white px-4 font-semibold text-slate-700 transition-colors" href="/bantuan">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors rounded-lg bg-white font-semibold text-slate-700" href="/bantuan">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
-                            <img src="image/bantuan.svg" alt="" width="12px" height="12px">
+                            <img src="image/bantuan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
                     </a>
@@ -108,14 +108,12 @@
                     </a>
                 </li>
                 <!--end Logout-->
-
             </ul>
         </div>
     </aside>
     <!-- end sidenav -->
 
-
-    <!-- content -->
+    <!-- Navbar -->
     <main class="ease-soft-in-out xl:ml-68.5 relative h-full max-h-screen rounded-xl transition-all duration-200">
         <!-- Navbar -->
         <nav class="relative flex flex-wrap items-center justify-between px-0 py-2 mx-6 transition-all shadow-none duration-250 ease-soft-in rounded-2xl lg:flex-nowrap lg:justify-start" navbar-main navbar-scroll="true">
@@ -126,41 +124,63 @@
                         <li class="leading-normal text-sm">
                             <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
                         </li>
-                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tables</li>
+                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Bantuan</li>
                     </ol>
                     <h6 class="mb-0 font-bold capitalize">Bantuan</h6>
                 </nav>
 
-
-            </div>
+                <div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
+                    <div class="flex items-center md:ml-auto md:pr-4">
+                    </div>
+                    <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
+                        <li class="flex items-center">
+                            <a class="block px-0 py-2 font-semibold transition-all ease-nav-brand text-sm text-slate-500">
+                                <i class="fa fa-user sm:mr-1"></i>
+                                <span class="hidden sm:inline">{{ Auth::user()->name }}</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center pl-4 xl:hidden">
+                            <a href="javascript:;" class="block p-0 transition-all ease-nav-brand text-sm text-slate-500" sidenav-trigger>
+                                <div class="w-4.5 overflow-hidden">
+                                    <i class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                                    <i class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                                    <i class="ease-soft relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                                </div>
+                            </a>
+                        </li>
+                </div>
             </div>
         </nav>
 
         <div class="w-full px-6 py-6 mx-auto">
             <!-- table 1 -->
-
-            <div class="flex flex-wrap -mx-3">
-                <div class="flex-none w-full max-w-full px-7">
-                    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
-                        <div class="bg-white rounded-lg shadow-lg p-4">
-
-                            <div class="mb-4 mx-3 my-2">
-                                <label class="block text-gray-700 font-bold mb-3" for="helpText">Tuliskan keluhan Anda
-                                    dan bantu kami
-                                    untuk terus berkembang!</label>
-                                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="helpText" rows="6" placeholder="Tuliskan pertanyaan atau keluhan Anda"></textarea>
-                            </div>
-                            <div class="flex justify-end">
-                                <button class="text-white font-bold py-2 px-4 rounded-full w-40" style="background-color: #A3A47F;" onmouseover="this.style.backgroundColor='#8C8D6F';" onmouseout="this.style.backgroundColor='#A3A47F';">
-                                    Kirim
-                                </button>
+            <form action="{{ url('bantuan/simpan') }}" method="POST" class="form-in">
+                @csrf
+                <div class="flex flex-wrap -mx-3">
+                    <div class="flex-none w-full max-w-full px-7">
+                        <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
+                            <div class="bg-white rounded-lg shadow-lg p-4">
+                                <div class="mb-4 mx-3 my-2">
+                                    <label class="block text-gray-700 font-bold mb-3" for="helpText">Tuliskan keluhan
+                                        Anda
+                                        dan bantu kami
+                                        untuk terus berkembang!</label>
+                                    <p class="font-medium">Nama Anda</p>
+                                    <input name="nama" id="nama" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" id="helpText" rows="6" placeholder="Tuliskan nama Anda"></input>
+                                    <p class="font-medium">Judul Bantuan</p>
+                                    <input name="judul" id="judul" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" id="helpText" rows="6" placeholder="Tuliskan judul bantuan"></input>
+                                    <p class="font-medium">Pertanyaan atau Keluhan Anda</p>
+                                    <textarea name="bantuan" id="bantuan" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="helpText" rows="6" placeholder="Tuliskan pertanyaan atau keluhan Anda"></textarea>
+                                </div>
+                                <div class="flex justify-end">
+                                    <input value="Kirim" type="submit" class="text-white font-bold py-2 px-4 rounded-full w-40" style="background-color: #A3A47F;" onmouseover="this.style.backgroundColor='#8C8D6F';" onmouseout="this.style.backgroundColor='#A3A47F';">
+                                    </input>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
-
+            </form>
 
             <!--Footer-->
             <footer class="pt-4 fixed bottom-5 left-50 z-20">
@@ -169,16 +189,23 @@
                         <div class="w-full max-w-full px-3 mt-0 mb-6 shrink-0 lg:mb-0 lg:w-1/2 lg:flex-none">
                             <div class="leading-normal text-center text-sm text-slate-500 lg:text-center whitespace-nowrap font-medium">
                                 Copyright © CardDev Team 2023
-                                <!--<script>document.write(new Date().getFullYear() + ",");</script>-->
+                                <!--<script>
+                                    document.write(new Date().getFullYear() + ",");
+                                </script>-->
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
             <!--Footer End-->
         </div>
     </main>
+
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
+    <!-- github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- main script file  -->
+    <script src="./assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
 </body>
 
 </html>

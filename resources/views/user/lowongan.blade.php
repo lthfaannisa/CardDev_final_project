@@ -86,7 +86,6 @@
                 </li>
                 <!-- Lowongan end -->
 
-
                 <!-- Bantuan -->
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/bantuan">
@@ -108,15 +107,13 @@
                     </a>
                 </li>
                 <!--end Logout-->
-
             </ul>
         </div>
     </aside>
     <!-- end sidenav -->
 
-
-    <!-- content -->
-    <main class="ease-soft-in-out xl:ml-68.5 pl-5 relative h-full max-h-screen rounded-xl transition-all duration-200">
+    <!-- Navbar -->
+    <main class="ease-soft-in-out xl:ml-68.5 relative h-full max-h-screen rounded-xl transition-all duration-200">
         <!-- Navbar -->
         <nav class="relative flex flex-wrap items-center justify-between px-0 py-2 mx-6 transition-all shadow-none duration-250 ease-soft-in rounded-2xl lg:flex-nowrap lg:justify-start" navbar-main navbar-scroll="true">
             <div class="flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit">
@@ -126,29 +123,46 @@
                         <li class="leading-normal text-sm">
                             <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
                         </li>
-                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tables</li>
+                        <li class="text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Lowongan</li>
                     </ol>
                     <h6 class="mb-0 font-bold capitalize">Lowongan</h6>
                 </nav>
-
-            </div>
+                <div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
+                    <div class="flex items-center md:ml-auto md:pr-4">
+                    </div>
+                    <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
+                        <li class="flex items-center">
+                            <a class="block px-0 py-2 font-semibold transition-all ease-nav-brand text-sm text-slate-500">
+                                <i class="fa fa-user sm:mr-1"></i>
+                                <span class="hidden sm:inline">{{ Auth::user()->name }}</span>
+                            </a>
+                        </li>
+                        <li class="flex items-center pl-4 xl:hidden">
+                            <a href="javascript:;" class="block p-0 transition-all ease-nav-brand text-sm text-slate-500" sidenav-trigger>
+                                <div class="w-4.5 overflow-hidden">
+                                    <i class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                                    <i class="ease-soft mb-0.75 relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                                    <i class="ease-soft relative block h-0.5 rounded-sm bg-slate-500 transition-all"></i>
+                                </div>
+                            </a>
+                        </li>
+                </div>
             </div>
         </nav>
 
         <!-- Kotak Besar -->
-
         <div class="flex-none w-full max-w-full px-3 mt-6">
-    <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
-        <div class="p-4 pb-0 mb-0 bg-white rounded-t-2xl flex items-center justify-between">
-            <h6 class="mb-0">Lowongan</h6>
-            <form action="lowongansearch" method="GET" class="form-inline ml-auto">
-                <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
-                    <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all mr-2">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                    </span>
-                    <input type="search" name="keyword" class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Type here..." />
-                </div>
-            </form>
+            <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
+                <div class="p-4 pb-0 mb-0 bg-white rounded-t-2xl flex items-center justify-between">
+                    <h6 class="mb-0">Lowongan</h6>
+                    <form action="lowongansearch" method="GET" class="form-inline ml-auto">
+                        <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
+                            <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all mr-2">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                            </span>
+                            <input type="search" name="keyword" class="mb-2 pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="Type here..." />
+                        </div>
+                    </form>
 
                     <!-- Isi Content Lowongan -->
 
@@ -165,29 +179,27 @@
                                     </a>
                                 </div>
                                 <div class="flex-auto px-1 pt-6">
-                                    <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">
-                                        Data Mining</p>
-                                    <a href="javascript:;">
-                                        <h5>{{ $item->bidang_minat }}</h5>
-                                    </a>
-                                    <p class="mb-6 leading-normal text-sm">
-                                        {{ $item->nama_instansi }}<br>{{ $item->lokasi_instansi }}
-                                    </p>
-                                    <div class="flex items-center justify-between">
-                                        <button type="button" class="inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-stone-600 border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-xs text-white tracking-tight-soft" style="background-color: #A3A47F;" onmouseover="this.style.backgroundColor='#8C8D6F';" onmouseout="this.style.backgroundColor='#A3A47F';">
-                                            Lihat Lowongan
-                                        </button>
-
-                                        
-
-
-                                        <div class="mt-2"></div>
+                                    <div class="flex-auto px-1 pt-6">
+                                        <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-to-tl from-gray-900 to-slate-800 text-sm bg-clip-text">
+                                            {{ $item->bidang_minat }}
+                                        </p>
+                                        <a href="javascript:;">
+                                            <h5>{{ $item->posisi }}</h5>
+                                        </a>
+                                        <p class="mb-6 leading-normal text-sm">
+                                            {{ $item->nama_instansi }}<br>{{ $item->lokasi_instansi }}
+                                        </p>
+                                        <div class="flex items-center justify-between">
+                                            <a href="{{ url('/lowonganshow', $item->id) }}" type="button" class="inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-stone-600 border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-xs text-white tracking-tight-soft" style="background-color: #A3A47F;" onmouseover="this.style.backgroundColor='#8C8D6F';" onmouseout="this.style.backgroundColor='#A3A47F';">
+                                                Lihat Lowongan
+                                            </a>
+                                            <div class="mt-2"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         @endforeach
-
                         <!-- End Content Lowongan -->
                     </div>
                 </div>
@@ -205,10 +217,14 @@
                     </div>
                 </div>
             </footer>
-
             <!--Footer End-->
         </div>
     </main>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
+    <!-- github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- main script file  -->
+    <script src="./assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
 </body>
 
 </html>

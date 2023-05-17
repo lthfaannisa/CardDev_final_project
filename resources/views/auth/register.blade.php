@@ -41,7 +41,7 @@ class="bg-cover bg-center h-screen" style="background-image: url('image/mipa.jpg
                                                 Email
                                             </label>
                                             <div class="relative">
-                                                <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan NPM Anda" required>
+                                                <input id="email" name="email" required class="block w-full px-10 py-2 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Masukkan email Anda" required>
                                                 <i class="absolute left-3 bottom-2.5 text-black fas fa-id-card"></i>
                                             </div>
                                         </div>

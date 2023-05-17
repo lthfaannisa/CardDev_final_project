@@ -20,7 +20,6 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <!-- Main Styling -->
     <link href="../assets/css/soft-ui-dashboard-tailwind.css?v=1.0.4" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 
 </head>
 
@@ -50,7 +49,7 @@
                         href="/dashboard">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
-                            <img src="image/dashboard.svg" alt="" width="13px">
+                            <img src="../image/dashboard.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Dashboard</span>
                     </a>
@@ -94,7 +93,7 @@
                         href="/lowongan">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
-                            <img src="image/lowongan.svg" alt="" width="13px">
+                            <img src="../image/lowongan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Lowongan</span>
                     </a>
@@ -107,7 +106,7 @@
                         href="/bantuan">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5"
                             style="background: linear-gradient(to right, #A3A47F, #8FA781)">
-                            <img src="image/bantuan.svg" alt="" width="13px">
+                            <img src="../image/bantuan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
                     </a>
@@ -120,7 +119,7 @@
                         href="/logout">
                         <div
                             class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
-                            <img src="image/logout.svg" alt="" width="12px" height="12px">
+                            <img src="../image/logout.svg" alt="" width="12px" height="12px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Log Out</span>
                     </a>
@@ -187,81 +186,81 @@
             </div>
         </nav>
 
-        <!-- COntent -->
 
-        <!-- table 1 -->
-        <div class="w-full px-8 py-8 mx-auto">
-            <div class="flex flex-wrap -mx-3">
-                <div class="flex-none w-full max-w-full px-3">
-                    <div
-                        class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
 
-                        <div class="flex-auto px-0 pt-0 pb-2">
-                            <div class="p-0 overflow-x-auto">
-                                <table class="items-center w-full mb-0 align-top border-gray-200 text-slate-500">
-                                    <thead class="align-bottom">
-                                        <tr>
-                                            <th
-                                                class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                                                Nama</th>
-                                            <th
-                                                class="px-6 py-3 pl- font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                                                Permintaan Bantuan</th>
-                                            <th
-                                                class="px-6 py-3 pl- font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                                                Aksi</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($bantuan as $item)
-                                            <tr>
-                                                <td
-                                                    class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                                    <div class="flex px-2 py-1">
-                                                        <div class="flex flex-col justify-center">
-                                                            <h6 class="mb-0 leading-normal text-sm">{{ $item->nama }}
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td
-                                                    class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                                    <p class="mb-0 font-semibold leading-tight text-xs">
-                                                        {{ $item->judul }}</p>
-                                                </td>
 
-                                                <td
-                                                    class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                                    <a href="{{ url('/bantuanshow', $item->id) }}"
-                                                        class="font-semibold leading-tight text-xs text-slate-400">
-                                                        Lihat
-                                                    </a>
-                                                    <a href="{{ url('/bantuan/delete', $item->id) }}"
-                                                        class="font-semibold leading-tight text-xs text-slate-400 pl-8">
-                                                        Hapus</a>
-                                                </td>
 
-                                            </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
+
+
+        <div class="w-full px-6 mx-auto">
+            <div class="relative flex items-center p-0 mt-6 overflow-hidden bg-center bg-cover min-h-75 rounded-2xl"
+                style="background-image: url('/image/mipa.jpg')">
+                <span class="absolute inset-y-0 w-full h-full bg-center bg-cover"
+                    style="background: linear-gradient(to top left, #a8a29e,#1e293b); opacity:0.6;"></span>
+            </div>
+            <div
+                class="relative flex flex-col flex-auto min-w-0 p-4 mx-6 -mt-16 overflow-hidden break-words border-0 shadow-blur rounded-2xl bg-white/80 bg-clip-border backdrop-blur-2xl backdrop-saturate-200">
+                <div class="flex flex-wrap -mx-3">
+                    <div class="flex-none w-auto max-w-full px-3 ">
+                        <div
+                            class="text-base ease-soft-in-out h-18.5 w-18.5 relative inline-flex items-center justify-center rounded-xl text-white transition-all duration-200">
+                            <img src="../image/logo-hd-usk.png" alt="profile_image"
+                                class="w-full shadow-soft-sm rounded-xl" />
+                        </div>
+                    </div>
+                    <div class="flex-none w-auto max-w-full px-3 my-auto">
+                        <div class="h-full">
+                            <h5 class="mb-1">{{ $bantuan->nama }}</h5>
+                            <p class="mb-0 font-semibold leading-normal text-sm">{{ $bantuan->judul }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="w-full p-6">
+            <div class="flex flex-wrap -mx-3">
+                <div class="flex-none w-full max-w-full px-3 mt-6">
+                    <div
+                        class="relative flex flex-col h-full min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
+                        <div class="p-4 pb-0 mb-0 bg-white border-b-0 rounded-t-2xl">
+                            <div class="flex flex-wrap -mx-3">
 
+                                <div class="w-full max-w-full px-3 text-right shrink-0 md:w-4/12 md:flex-none">
 
+                                    <div data-target="tooltip"
+                                        class="hidden px-2 py-1 text-center text-white bg-black rounded-lg text-sm"
+                                        role="tooltip">
+                                        Edit Profile
+                                        <div class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
+                                            data-popper-arrow></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-auto p-4">
 
-            <!-- Content -->
+                            <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+                                <li
+                                    class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
+                                    <span style="margin-left: 7px;">{{ $bantuan->bantuan }}</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
             <!--Footer-->
-            <footer class="pt-4 fixed bottom-0 left-0 w-full bg-gray-100">
+            <footer class="pt-10 bottom-0 left-0 w-full bg-gray-100">
                 <div class="w-full px-6 mx-auto">
                     <div class="flex items-center justify-between -mx-3">
                         <div class="w-full max-w-full px-3 mt-0 mb-6 shrink-0 lg:mb-0 lg:w-1/2 lg:flex-none">
                             <div
                                 class="leading-normal text-center text-sm text-slate-500 lg:text-center whitespace-nowrap font-medium">
-                                &copy; CardDev Team 2023
+                                Copyright &copy; CardDev Team 2023
                             </div>
                         </div>
                     </div>
@@ -270,14 +269,16 @@
 
             <!--Footer End-->
         </div>
-    </main>
+        </div>
 
-    <!-- plugin for scrollbar  -->
-    <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
-    <!-- github button -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- main script file  -->
-    <script src="./assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
+
+        <!-- plugin for scrollbar  -->
+        <script src="../assets/js/plugins/perfect-scrollbar.min.js" async></script>
+        <!-- github button -->
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- main script file  -->
+        <script src="../assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
+
 </body>
 
 </html>

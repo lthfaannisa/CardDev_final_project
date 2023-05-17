@@ -6,6 +6,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\auth\LoginController;
 use App\Http\Controllers\auth\RegisterController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\BantuanController;
 
 
 
@@ -48,8 +49,10 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
 
     Route::get('/dashboard', [PagesController::class, 'dashboard'])->middleware('auth');
     //Route::get('/profile', [PagesController::class, 'profile'])->middleware('auth');
-    Route::get('/bantuan', [PagesController::class, 'bantuan'])->middleware('auth');
+    Route::get('/bantuan', [BantuanController::class, 'bantuan'])->middleware('auth');
+    Route::post('/bantuan/simpan', [BantuanController::class, 'store'])->middleware('auth');
     Route::get('/lowongan', [LowonganController::class, 'lowongan'])->middleware('auth');
+    Route::get('/lowonganshow/{id}', [LowonganController::class, 'show'])->middleware('auth');
     Route::get('/lowongan/create', [LowonganController::class, 'create'])->middleware('auth');
     Route::post('/lowongan/simpan', [LowonganController::class, 'store'])->middleware('auth');
     Route::get('/editlowongan/{id}', [LowonganController::class, 'edit'])->middleware('auth');
@@ -59,9 +62,11 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
     Route::post('/student/simpan', [StudentController::class, 'store'])->middleware('auth');
     Route::post('/updatealumni/{id}', [StudentController::class, 'update'])->middleware('auth');
     Route::get('/show/{id}', [StudentController::class, 'show'])->middleware('auth');
+    Route::get('/bantuanshow/{id}', [BantuanController::class, 'show'])->middleware('auth');
     Route::get('/edit/{id}', [StudentController::class, 'edit'])->middleware('auth');
     Route::get('/student/delete/{id}', [StudentController::class, 'destroy'])->middleware('auth');
     Route::get('/lowongan/delete/{id}', [LowonganController::class, 'destroy'])->middleware('auth');
+    Route::get('/bantuan/delete/{id}', [BantuanController::class, 'destroy'])->middleware('auth');
     Route::get('/search', [StudentController::class, 'search'])->middleware('auth');
     Route::get('/lowongansearch', [LowonganController::class, 'search'])->middleware('auth');
     Route::get('/logout', [LoginController::class, 'destroy'])->middleware('auth');
