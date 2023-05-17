@@ -207,6 +207,9 @@
                                     <input name="nama" id="nama"
                                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="helpText" rows="6" placeholder="Tuliskan Nama Anda"></input>
+                                    <input name="judul" id="judul"
+                                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="helpText" rows="6" placeholder="Judul Bantuan"></input>
                                     <textarea name="bantuan" id="bantuan"
                                         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                         id="helpText" rows="6" placeholder="Tuliskan pertanyaan atau keluhan Anda"></textarea>
