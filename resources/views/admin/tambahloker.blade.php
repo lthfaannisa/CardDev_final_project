@@ -426,7 +426,7 @@
                                 </span>
                                 <input name="posisi" id='posisi' type="text"
                                     class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
-                                    placeholder="NPM" />
+                                    placeholder="Posisi" />
                             </div>
                         </li>
 
@@ -443,7 +443,7 @@
                                 </span>
                                 <input name="website_instansi" id="website_instansi" type="text"
                                     class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
-                                    placeholder="Nama Instansi" />
+                                    placeholder="Website Instansi" />
                             </div>
 
                         </li>
@@ -460,7 +460,7 @@
                                 </span>
                                 <input name="email_instansi" id="email_instansi" type="email"
                                     class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
-                                    placeholder="Tempat Lahir" />
+                                    placeholder="Email Instansi" />
                             </div>
 
                         <li
@@ -475,7 +475,7 @@
                                 </span>
                                 <input name="lokasi_instansi" id="lokasi_instansi" type="text"
                                     class="pl-8.75 text-sm focus:shadow-soft-primary-outline ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
-                                    placeholder="Pekerjaan" />
+                                    placeholder="Lokasi Instansi" />
                             </div>
                         </li>
 
@@ -501,13 +501,13 @@
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input p-4" type="radio" name="bidang_minat"
-                                        id="jaringan">
+                                        id="jaringan" value="Jaringan Komputer & Keamanan Siber">
                                     <label class="custom-control-label p-2" for="jaringan">Jaringan Komputer &
                                         Keamanan Siber</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input p-4" type="radio" name="bidang_minat"
-                                        id="gis">
+                                        id="gis" value="GeoSpasial">
                                     <label class="custom-control-label p-2" for="gis">GeoSpasial</label>
                                 </div>
                                 <!-- End tes -->
@@ -562,11 +562,11 @@
     </main>
 
     <!-- plugin for scrollbar  -->
-<script src="../assets/js/plugins/perfect-scrollbar.min.js" async></script>
-<!-- github button -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- main script file  -->
-<script src="../assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js" async></script>
+    <!-- github button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- main script file  -->
+    <script src="../assets/js/soft-ui-dashboard-tailwind.js?v=1.0.4" async></script>
 </body>
 
 </html>
