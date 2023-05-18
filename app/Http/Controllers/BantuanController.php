@@ -39,5 +39,10 @@ class BantuanController extends Controller
         $bantuan->delete();
         return back();
     }
+    public function show($id)
+    {
+        $bantuan = Bantuan::findorfail($id);
+        return view('admin.lihatbantuan', compact('bantuan'));
+    }
 
 }
