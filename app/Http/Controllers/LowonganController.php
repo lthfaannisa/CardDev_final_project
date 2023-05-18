@@ -65,4 +65,9 @@ class LowonganController extends Controller
         $lowongan->delete();
         return back();
     }
+    public function show($id)
+    {
+        $lowongan = Lowongan::findorfail($id);
+        return view('user.lihatlowongan', compact('lowongan'));
+    }
 }
