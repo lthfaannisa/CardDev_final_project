@@ -172,7 +172,7 @@
                 <div class="flex-none w-full max-w-full px-3">
                     <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
 
-                        <div class="flex items-center md:ml-auto md:pr-4">
+                        <div class="flex items-center md:ml-auto md:pr-4 mt-2">
                             <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease-soft">
                                 <span class="text-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
                                     <i class="fas fa-search" aria-hidden="true"></i>
