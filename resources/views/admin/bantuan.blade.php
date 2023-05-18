@@ -227,12 +227,12 @@
                                                 <td
                                                     class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
                                                     <p class="mb-0 font-semibold leading-tight text-xs">
-                                                        {{ $item->bantuan }}</p>
+                                                        {{ $item->judul }}</p>
                                                 </td>
 
                                                 <td
                                                     class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                                                    <a href="javascript:;"
+                                                    <a href="{{ url('/bantuanshow', $item->id) }}"
                                                         class="font-semibold leading-tight text-xs text-slate-400">
                                                         Lihat
                                                     </a>
