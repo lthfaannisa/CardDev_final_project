@@ -43,7 +43,7 @@
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/dashboard">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
-                            <img src="image/dashboard.svg" alt="" width="13px">
+                            <img src="../image/dashboard.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Dashboard</span>
                     </a>
@@ -79,7 +79,7 @@
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors rounded-lg bg-white font-semibold text-slate-700" href="/lowongan">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5" style="background: linear-gradient(to right, #A3A47F, #8FA781)">
-                            <img src="image/lowongan.svg" alt="" width="13px">
+                            <img src="../image/lowongan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Lowongan</span>
                     </a>
@@ -90,7 +90,7 @@
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/bantuan">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
-                            <img src="image/bantuan.svg" alt="" width="13px">
+                            <img src="../image/bantuan.svg" alt="" width="13px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Bantuan</span>
                     </a>
@@ -101,7 +101,7 @@
                 <li class="mt-0.5 w-full">
                     <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors" href="/logout">
                         <div class="shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center xl:p-2.5">
-                            <img src="image/logout.svg" alt="" width="12px" height="12px">
+                            <img src="../image/logout.svg" alt="" width="12px" height="12px">
                         </div>
                         <span class="ml-1 duration-300 opacity-100 pointer-events-none ease-soft">Log Out</span>
                     </a>
@@ -202,32 +202,32 @@
 
                                 <li class="relative block px-4 py-1 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                                     <strong class="text-slate-700">Nama Instansi</strong>
-                                    <span style="margin-left: 71px;">:{{ $lowongan->nama_instansi }} </span>
+                                    <span style="margin-left: 71px;">: {{ $lowongan->nama_instansi }} </span>
                                 </li>
 
                                 <li class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
                                     <strong class="text-slate-700">Posisi</strong>
-                                    <span style="margin-left: 140px;">:{{ $lowongan->posisi }}</span>
+                                    <span style="margin-left: 140px;">: {{ $lowongan->posisi }}</span>
                                 </li>
                                 <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                                     <strong class="text-slate-700">Website Instansi</strong>
-                                    <span style="margin-left: 53px;">:{{ $lowongan->website_instansi }}</span>
+                                    <span style="margin-left: 53px;">: {{ $lowongan->website_instansi }}</span>
                                 </li>
                                 <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                                     <strong class="text-slate-700">Email Instansi</strong>
-                                    <span style="margin-left: 75px;">:{{ $lowongan->email_instansi }}</span>
+                                    <span style="margin-left: 75px;">: {{ $lowongan->email_instansi }}</span>
                                 </li>
                                 <li class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
                                     <strong class="text-slate-700">Lokasi Instansi</strong>
-                                    <span style="margin-left: 68px;">:{{ $lowongan->lokasi_instansi }}</span>
+                                    <span style="margin-left: 68px;">: {{ $lowongan->lokasi_instansi }}</span>
                                 </li>
                                 <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                                     <strong class="text-slate-700">Bidang Minat</strong>
-                                    <span style="margin-left: 80px;">:{{ $lowongan->bidang_minat }}</span>
+                                    <span style="margin-left: 80px;">: {{ $lowongan->bidang_minat }}</span>
                                 </li>
                                 <li class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-sm text-inherit">
                                     <strong class="text-slate-700">Persyaratan</strong>
-                                    <span style="margin-left: 87px;">:{{ $lowongan->persyaratan }}</span>
+                                    <span style="margin-left: 87px;">: {{ $lowongan->persyaratan }}</span>
                                 </li>
 
 
