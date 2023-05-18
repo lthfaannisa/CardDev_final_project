@@ -62,6 +62,7 @@ Route::group(['middleware' => 'prevent-back-history'], function () {
     Route::post('/student/simpan', [StudentController::class, 'store'])->middleware('auth');
     Route::post('/updatealumni/{id}', [StudentController::class, 'update'])->middleware('auth');
     Route::get('/show/{id}', [StudentController::class, 'show'])->middleware('auth');
+    Route::get('/bantuanshow/{id}', [BantuanController::class, 'show'])->middleware('auth');
     Route::get('/edit/{id}', [StudentController::class, 'edit'])->middleware('auth');
     Route::get('/student/delete/{id}', [StudentController::class, 'destroy'])->middleware('auth');
     Route::get('/lowongan/delete/{id}', [LowonganController::class, 'destroy'])->middleware('auth');
