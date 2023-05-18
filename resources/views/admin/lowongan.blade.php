@@ -181,7 +181,7 @@
                     </div>
                 </form>
                 <div class="p-4 pb-0 mb-0 bg-white rounded-t-2xl">
-                    <h6 class="mb-0">Lowongan</h6><br>
+                    <h6 class="mb-1">Lowongan</h6><br>
 
 
                     <!-- Isi Content Lowongan -->
@@ -195,7 +195,7 @@
                             <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
                                 <div class="relative">
                                     <a class="block shadow-xl rounded-2xl">
-                                        <img src="{{ $item->foto_instansi }}" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
+                                        <img src="/image/{{ $item->foto_instansi }}" alt="img-blur-shadow" class="max-w-full shadow-soft-2xl rounded-2xl" width="600" />
                                     </a>
                                 </div>
                                 <div class="flex-auto px-1 pt-6">
@@ -225,6 +225,7 @@
                         </div>
                         @endforeach
                         <!-- New Loker -->
+                        <br>
                         <div class="w-full max-w-full px-3 mb-10 p-10 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12 mt-8">
                             <div class="relative flex flex-col h-full min-w-0 break-words bg-transparent border border-solid shadow-none rounded-2xl border-slate-100 bg-clip-border">
                                 <div class="flex flex-col justify-center flex-auto p-6 text-center">
