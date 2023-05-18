@@ -67,12 +67,17 @@ class StudentController extends Controller
 
     public function search(Request $request)
     {
+        $role = Auth::user()->role;
         if ($request->keyword) {
             $student = Student::search($request->keyword)->get();
         } else {
             $student = Student::all();
         }
 
-        return view('admin.dataalumni', ['students' => $student]);
+        if ($role == '1') {
+            return view('admin.dataalumni', ['students' => $student]);
+        } else if ($role == '2') {
+            return view('user.dataalumni', ['students' => $student]);
+        }
     }
 }
