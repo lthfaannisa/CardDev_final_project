@@ -51,13 +51,18 @@ class LowonganController extends Controller
 
     public function search(Request $request)
     {
+        $role = Auth::user()->role;
         if ($request->keyword) {
             $lowongan = Lowongan::search($request->keyword)->get();
         } else {
             $lowongan = Lowongan::all();
         }
 
-        return view('admin.lowongan', ['lowongan' => $lowongan]);
+        if ($role == '1') {
+            return view('admin.lowongan', ['lowongan' => $lowongan]);
+        } else if ($role == '2') {
+            return view('user.lowongan', ['lowongan' => $lowongan]);
+        }
     }
     public function destroy(string $id): RedirectResponse
     {
