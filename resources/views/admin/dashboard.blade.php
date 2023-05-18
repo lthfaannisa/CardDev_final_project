@@ -138,10 +138,6 @@
                 <div class="border-black/12.5 mb-0 rounded-t-2xl border-b-0 border-solid bg-white p-6 pb-0">
                     <h3 class="font-bold">Jumlah Alumni <h5 class="font-semibold">Berdasarkan Tahun</h5>
                     </h3>
-                    <p class="leading-normal text-sm">
-                        <i class="fa fa-arrow-up text-lime-500"></i>
-                        <span class="font-semibold">4% more</span> in 2020
-                    </p>
                 </div>
                 <div class="flex-auto p-4">
                     <div>
