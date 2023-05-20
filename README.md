@@ -49,7 +49,7 @@ DB_PASSWORD=<your_password></code></pre>
 12. Run php artisan serve
 <pre><code>php artisan serve</code></pre>
 
-<b>Now, you can access the project at localhost:8000 :D<b>
+<b>Now, you can access the project at localhost:8000 :D</b>
 
 ### Rule to register or login
 <hr>
