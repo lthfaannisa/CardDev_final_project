@@ -52,13 +52,14 @@ DB_PASSWORD=<your_password></code></pre>
 <b>Now, you can access the project at localhost:8000 :D<b>
 
 ### Rule to register or login
-1. If you want to login or register as student, your email must have the word 'mhs'
+<hr>
+1. If you want to login or register as student, your email must have the word 'mhs'<br>
 example :
 <pre><code>student_example@mhs.email.com</code></pre>
-2. If you want to login or register as admin, your email must have the word 'adm'
+2. If you want to login or register as admin, your email must have the word 'adm'<br>
 example :
 <pre><code>admin_example@adm.email.com</code></pre>
 
 ### Others
-
+<hr>
 * Live URL : https://simba3.000webhostapp.com/
