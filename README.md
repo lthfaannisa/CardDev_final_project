@@ -50,3 +50,7 @@ DB_PASSWORD=<your_password></code></pre>
 <pre><code>php artisan serve</code></pre>
 
 <b>Now, you can access the project at localhost:8000 :D<b>
+
+### Others
+
+* Live URL : https://simba3.000webhostapp.com/
